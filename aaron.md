@@ -1,7 +1,7 @@
 Hello
 =====
 
-This is a test.
+This is a **test**.
 
 1. Hello
 2. Goodbye
