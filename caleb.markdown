@@ -2,7 +2,7 @@ This is a markdown document.
 
 If you prefer, you can download these instructions in PDF form.
 
-Runaway slave advertisements from nineteenth-century Texas appeared in newspapers that have been digitized. That is, they have, like all digital representations of analog sources, been *partially* digitized. The Portal to Texas History at the University of North Texas contains full-page images of many nineteenth-century newspapers, together with metadata about the newspapers themselves and OCR text for each newspaper page that makes it possible to search for text.
+Runaway slave advertisements from nineteenth-century Texas appeared in newspapers that have been digitized. That is, they have, like all digital representations of analog sources, been *partially* digitized. The [Portal to Texas History](http://texashistory.unt.edu) at the University of North Texas contains full-page images of many nineteenth-century newspapers, together with metadata about the newspapers themselves and OCR text for each newspaper page that makes it possible to search for text.
 
 But these newspapers have not been digitized so as to provide metadata or descriptions at the level of individual articles. That means, to paraphrase Daniel J. Cohen and Roy Rosenzweig, part of the information visible to the eye (i.e., information about when a new article or ad begins and ends) has been lost (or at least not digitized) in the process of the newspaper’s "becoming digital."
 
