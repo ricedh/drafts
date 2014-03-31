@@ -18,7 +18,7 @@ Since people often go to Twitter to relax and read funny tweets, it may initialy
 
 To twenty-first-century readers, one of the disturbing aspects about these ads is how they are mixed into the rest of the newspaper in such a mundane way. By publishing our ads mixed into a Twitter feed, among all the jokes and day-to-day updates, we hope to communicate the both the jarring effect on students of finding the ads initially, and the familiarity that made white nineteenth-century readers see the advertisements as a normal feature of their world.
 
-- Surfacing of significant ads like [the one about William Marsh Rice](http://texashistory.unt.edu/ark:/67531/metapth235886/m1/3/zoom/?zoom=5&lat=8260&lon=3904).
+The collection of digitized runaway slave ads is extensive, and with some exceptions, largely untapped. With a large community of readers, the project might help surface ads significant to some individuals, historians, and institutions who might not otherwise have discovered the relevant source(s). For example, in creating the Twitter bot, we stumbled upon a [previously unknown advertisement listed by William Marsh Rice](http://texashistory.unt.edu/ark:/67531/metapth235886/m1/3/zoom/?zoom=5&lat=8260&lon=3904), the founder of Rice University. The advertisement reveals valueable information--the name of one of Rice's slaves--that was not even included in his census information. We hope that with the broad reach of Twitter, more ads wiil be unearthed that are of value to historians.
 
 ### Why Texas?
 
@@ -26,7 +26,7 @@ Compared to research on slavery in other Southern states, not much research has 
 
 John Hope Franklin and Loren Schweninger’s *Runaway Slaves: Rebels on the Plantation*, one of the most comprehensive projects on runaway slaves in the South, does not even include Texas in the data or analysis, but rather implies that slavery seems to be relatively uniform throughout the South. Randolph B. Campbell advanced the discussion on slavery in Texas through his book *An Empire for Slavery: The Peculiar Institution in Texas, 1821-1865*, but agreed with Franklin and Schweninger on the similarities between Texas and slavery elsewhere. Other scholars, however, suggest that slavery in Texas (specifically in central Texas) was unique from that in other Southern states and offered unusual opportunities for resistance and flight to enslaved people due to Texas's proximity to Mexico and Indian nations. The tweets from [@TxRunawayAds](http://twitter.com/TxRunawayAds) will hopefully prompt renewed attention to these debates and suggest new lines of research about the subject.
 
-Texas also serves as the geographic focus for this project because of the unparalleled resources of the [Portal to Texas History](http://texashistory.unt.edu) which allows permalinks to point to particular locations on digitized newspaper pages. Unlike many previous runaway ad projects, which display cropped advertisements, the Portal allows viewers to see runaway ads in their original historical context on the page.
+- PoTH offers one of the few resources where ads can be seen easily in their original context.
 
 ## About the Sources
 
