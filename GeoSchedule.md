@@ -1,11 +1,11 @@
-MONDAY MARCH 31st
+Monday, March 31st
 -----------------
 Split up Arkansas and Mississippi corpus into individual ad files using drsparser.py - Aaron
 
 Write python script placetagger.py to tag places using Pyner in a folder of text files and save the results - Aaron
 
 
-TUESDAY APRIL 1st
+Tuesday, April 1st
 -----------------
 Run placetagger.py on Arkansas, Mississippi, and Texas (Gazette and Telegraph) corpus - Aaron
 
@@ -14,7 +14,7 @@ Run placetagger.py on Mississippi corpus - Kaitlyn
 Start looking over required readings from earlier in the semester for more information about trends in runaway destinations and connections among Texas, Mississippi, and Arkansas. Do additional readings if necessary - Clare
 
 
-WEDNESDAY APRIL 2nd - FRIDAY APRIL 4th
+Wednesday, April 2nd - Friday, April 4th
 --------------------------------------
 Clean up Named Entity Recognitions results - Aaron and Kaitlyn
 
@@ -29,7 +29,7 @@ Look over our data and outline the essay - Clare
 Test drive [Palladio](http://palladio.designhumanities.org/) and research other mapping options for displaying our place connections results - All
 
 
-SATURDAY APRIL 5th - SUNDAY APRIL 6th
+Saturday, April 5th - Sunday, April 6th
 --------------------------------------
 Analyze Named Entity Recognition results - All
 
@@ -48,7 +48,7 @@ Draft the close reading essay - Clare
 Write progress update for course blog - Aaron and Kaitlyn
 
 
-MONDAY APRIL 7th - TUESDAY APRIL 8th
+Monday, April 7th - Tuesday, April 8th
 ------------------------------------
 Decide on how we want to display our place connectedness results - All
 
@@ -59,7 +59,7 @@ Decide on how we want to display our place connectedness results - All
 * How to separate projected runaway "to's" (and guessed "from's" for jailor's notices, if ads like that exist) from actual "to's" and "from's"? Do we have much more of one type (real. vs guessed) -- probably almost exclusively guessed locations?
 
 
-WEDNESDAY APRIL 9th - FRIDAY APRIL 11th
+Wednesday, April 9th - Friday, April 11th
 ---------------------------------------
 Coordinate analysis and clean up - All
 
@@ -68,14 +68,14 @@ Re-assess rest of semester schedule in light of presentation format choices - Al
 Choose a mapping tool. Start building our map based on our decisions about to, from, projected, etc - All
 
 
-SATURDAY APRIL 12th - SUNDAY April 13th
+Saturday, April 12th - Sunday, April 13th
 ------------------------------------------
 Discuss our overall findings, and how our graphs and/or interactive tools share this information - All
 
 Write and post progress report on course blog (by Monday) - All
 
 
-MONDAY APRIL 14th - WEDNESDAY APRIL 16th
+Monday, April 14th - Wednesday, April 16th
 ----------------------------------------
 Begin Methods page - Aaron and Kaitlyn
 
@@ -84,7 +84,7 @@ Begin Conclusions page, including followup questions and summary of findings - C
 Finish our map and other graphics - All
 
 
-THURSDAY APRIL 17th - SUNDAY APRIL 20th
+Thursday, April 17th - Sunday, April 20th
 --------------------------------------
 Write and post progress report - All
 
@@ -93,7 +93,7 @@ Finish Methods page - Aaron and Kaitlyn
 Finish Conclusions page - All
 
 
-MONDAY APRIL 21st - FRIDAY APRIL 25th
+Monday, April 21st - Friday, April 25th
 ------------------------------------
 Finalize website pages - All
 
