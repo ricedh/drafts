@@ -17,8 +17,11 @@ Start looking over required readings from earlier in the semester for more infor
 WEDNESDAY APRIL 2nd - FRIDAY APRIL 4th
 --------------------------------------
 Clean up Named Entity Recognitions results - Aaron and Kaitlyn
+
 * Remove false positives
+
 * As thoroughly as possible given the magnitude of the collection, scan through tagged documents for any obvious false negatives
+
 * Tag each tagged location as a to or from, projected or real
 
 Look over our data and outline the essay - Clare
@@ -31,11 +34,13 @@ SATURDAY APRIL 5th - SUNDAY APRIL 6th
 Analyze Named Entity Recognition results - All
 
 If a lot of NER results:
+
 * Research [geocoding APIs](http://blog.programmableweb.com/2012/06/21/7-free-geocoding-apis-google-bing-yahoo-and-mapquest/) to parse our NER results and generate latitude/longitude coordinates for all named places - Aaron
 
 * Write script to generate coordinates for tagged locations and execute on our data - Aaron
 
 Else:
+
 * Manually search for and store coordinates - Kaitlyn
 
 Draft the close reading essay - Clare
@@ -46,8 +51,11 @@ Write progress update for course blog - Aaron and Kaitlyn
 MONDAY APRIL 7th - TUESDAY APRIL 8th
 ------------------------------------
 Decide on how we want to display our place connectedness results - All
+
 * How to display our results? Lines connecting the "to" coordinates (e.g. projected destination) and the "from" coordinates (e.g. coordinates of Houston for the Texas Register)? Something more individualized, at the ad-level? Collapse lines between cities or even states into single weighted lines by the number of that connection?
+
 * Building onto the first question, how to indicate direction: different line shapes/colors? For example, if there is a Texas ad that says their runaway probably went to his family in Arkansas, how to we differentiate that from an Arkansas jailor notice for a runaway slave saying he is from Texas? Is it important at all for us to make this distinction? If not, we might do better with a map in the form of an undirected graph.
+
 * How to separate projected runaway "to's" (and guessed "from's" for jailor's notices, if ads like that exist) from actual "to's" and "from's"? Do we have much more of one type (real. vs guessed) -- probably almost exclusively guessed locations?
 
 
