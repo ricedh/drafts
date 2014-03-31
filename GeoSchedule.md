@@ -30,11 +30,13 @@ SATURDAY APRIL 5th - SUNDAY APRIL 6th
 --------------------------------------
 Analyze Named Entity Recognition results - All
 
-If a lot of NER results: Research [geocoding APIs](http://blog.programmableweb.com/2012/06/21/7-free-geocoding-apis-google-bing-yahoo-and-mapquest/) to parse our NER results and generate latitude/longitude coordinates for all named places - Aaron
+If a lot of NER results:
+* Research [geocoding APIs](http://blog.programmableweb.com/2012/06/21/7-free-geocoding-apis-google-bing-yahoo-and-mapquest/) to parse our NER results and generate latitude/longitude coordinates for all named places - Aaron
 
-If a lot of NER results: Write script to generate coordinates for tagged locations and execute on our data - Aaron
+* Write script to generate coordinates for tagged locations and execute on our data - Aaron
 
-If not a lot of NER results: Manually search for and store coordinates - Kaitlyn
+Else:
+* Manually search for and store coordinates - Kaitlyn
 
 Draft the close reading essay - Clare
 
