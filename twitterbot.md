@@ -1,6 +1,6 @@
 # Introduction to TxRunawayAds
 
-The [@TxRunawayAds](http://twitter.com/TxRunawayAds) account tweets regular excerpts from advertisements related to runaway slaves in nineteenth-century Texas newspapers, along with links to the page images of the ad in the [Portal to Texas History](http://texashistory.unt.edu).
+The [@TxRunawayAds](http://twitter.com/TxRunawayAds) account tweets excerpts from advertisements related to runaway slaves in nineteenth-century Texas newspapers, along with links to the page images of the ad in the [Portal to Texas History](http://texashistory.unt.edu).
 
 The tweeted excerpts come from ads identified and transcribed in the spring of 2014 by students in two digital history courses at [Rice University](http://digitalhistory.blogs.rice.edu) and the [University of North Texas](http://torget.us/HIST5100/), taught respectively by Caleb McDaniel and Andrew Torget. The excerpts and links are composed and tweeted automatically with a [script](https://github.com/ricedh/adbot) written by Caleb McDaniel.
 
@@ -9,6 +9,8 @@ The tweeted excerpts come from ads identified and transcribed in the spring of 2
 ## Rationale
 
 ### Why Runaway Slave Advertisements?
+
+- Why are runaway slave advertisements useful sources?
 
 ### Why Twitter?
 
