@@ -12,6 +12,9 @@ The tweeted excerpts come from ads identified and transcribed in the spring of 2
 
 - Why are runaway slave advertisements useful sources?
 
+Unfortunately, the primary sources on slavery in the United States are limited. These sources are usually written from the perspective of the slaveholder and often reduce slaves to their monetary value. This can make it difficult for historians to learn about the personal experiences, attitudes, and relationships of enslaved men and women. Among these primary sources, runaway advertisements offer one of the best glimpses into the names, personalities, and experiences of individual slaves, as well as the institution of slavery as a whole. It was in the slaveholder’s best interest to provide as detailed and accurate a description of the runaway as possible, often including descriptions of slave appearance, mannerisms, and relationships. These runaway ads offer a valuable picture of the humanity and struggle for autonomy made by individual enslaved men and women in the 19th Century. Of course, the advertisements must be taken with a grain of salt, since they are written from the biased perspective of the slaveholder attempting to recapture their human property. Nevertheless, runaway ads are one of the most detailed and long-standing forms of historical documents about slavery. They can help us answer questions about how slavery operated and what forms of resistance were available to slaves.
+
+
 ### Why Twitter?
 
 Since people often go to Twitter to relax and read funny tweets, it may initialy seem odd to encounter a sobering subject like slavery in the middle of a stream. On the other hand, seeing ads in this context may help to convey the prevalence and the everyday nature of the ads in 19th century newspapers. When looking for ads, students noticed that nineteenth-century newspapers often contained lighthearted poems, humorous stories, or notices of local events.
