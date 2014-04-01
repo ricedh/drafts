@@ -36,6 +36,6 @@ John Hope Franklin and Loren Schweninger’s *Runaway Slaves: Rebels on the Plan
 
 The [@TxRunawayAds](http://twitter.com/TxRunawayAds) currently selects randomly from approximately 380 advertisements located in issues of the [*Telegraph and Texas Register*](http://www.tshaonline.org/handbook/online/articles/eet02) and the [*Austin State Gazette*](http://www.tshaonline.org/handbook/online/articles/eeayy) from between the years of 1836 and 1860. For more information about these newspapers and the Portal to Texas History, visit the [Mapping Texts](http://mappingtexts.org) project, an NEH collaboration between Stanford University and the University of North Texas.
 
-## Acknowledgements
+## Credits
 
-Parts of this essay were drafted by Alyssa Anderson, Clare Jensen, and Caleb McDaniel, with input from students in [Digital History Methods](http://digitalhistory.blogs.rice.edu).
+This essay was drafted by Alyssa Anderson, Aaron Braunstein, Daniel Burns, Clare Jensen, Caleb McDaniel, and Kaitlyn Sisk.
