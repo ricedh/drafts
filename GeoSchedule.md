@@ -1,15 +1,14 @@
 Monday, March 31st
 -----------------
-Split up Arkansas and Mississippi corpus into individual ad files using drsparser.py - Aaron
+~~Split up Arkansas and Mississippi corpus into individual ad files using drsparser.py - Aaron~~
+* Being done by Franco and Dr. McDaniel
 
-Write python script placetagger.py to tag places using Pyner in a folder of text files and save the results - Aaron
+~~Write python script placetagger.py to tag places using Pyner in a folder of text files and save the results - Aaron~~
 
 
 Tuesday, April 1st
 -----------------
-Run placetagger.py on Arkansas, Mississippi, and Texas (Gazette and Telegraph) corpus - Aaron
-
-Run placetagger.py on Mississippi corpus - Kaitlyn
+Run placetagger.py on ~~Arkansas,~~ Mississippi, ~~and Texas (Gazette and Telegraph) corpus~~ - Aaron
 
 Start looking over required readings from earlier in the semester for more information about trends in runaway destinations and connections among Texas, Mississippi, and Arkansas. Do additional readings if necessary - Clare
 
@@ -27,6 +26,10 @@ Clean up Named Entity Recognitions results - Aaron and Kaitlyn
 Look over our data and outline the essay - Clare
 
 Test drive [Palladio](http://palladio.designhumanities.org/) and research other mapping options for displaying our place connections results - All
+
+Plan shaded map feature. Goal is to hover over a state, and it shades that state and other states with intensity determined by number of mentions of places in that state from the origin state's ads. Perhaps static images (using fusion tables) and Javascript to update the image depending on cursor location? - Aaron
+
+Look over NER results differences from pre-processing ads text by replacing new lines with a space, and with a comma and space. - Aaron
 
 
 Saturday, April 5th - Sunday, April 6th
