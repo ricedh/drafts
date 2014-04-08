@@ -23,13 +23,15 @@ Clean up Named Entity Recognitions results - Aaron and Kaitlyn
 
 * Tag each tagged location as a to or from, projected or real
 
-Look over our data and outline the essay - Clare
+~~Look over our data and outline the essay - Clare~~
 
 Test drive [Palladio](http://palladio.designhumanities.org/) and research other mapping options for displaying our place connections results - All
 
 Plan shaded map feature. Goal is to hover over a state, and it shades that state and other states with intensity determined by number of mentions of places in that state from the origin state's ads. Perhaps static images (using fusion tables) and Javascript to update the image depending on cursor location? - Aaron
 
-Look over NER results differences from pre-processing ads text by replacing new lines with a space, and with a comma and space. - Aaron
+~~Look over NER results differences from pre-processing ads text by replacing new lines with a space, and with a comma and space. - Aaron~~
+
+* Results are approximately equal. Keeping as is (comma, space) for now.
 
 
 Saturday, April 5th - Sunday, April 6th
@@ -42,13 +44,13 @@ If a lot of NER results:
 
 * Write script to generate coordinates for tagged locations and execute on our data - Aaron
 
-Else:
+~~Else:
 
-* Manually search for and store coordinates - Kaitlyn
+* Manually search for and store coordinates - Kaitlyn~~
 
-Draft the close reading essay - Clare
+~~Draft the close reading essay - Clare~~
 
-Write progress update for course blog - Aaron and Kaitlyn
+~~Write progress update for course blog - Aaron and Kaitlyn~~
 
 
 Monday, April 7th - Tuesday, April 8th
