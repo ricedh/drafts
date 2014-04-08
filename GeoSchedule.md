@@ -8,9 +8,9 @@ Monday, March 31st
 
 Tuesday, April 1st
 -----------------
-Run placetagger.py on ~~Arkansas,~~ Mississippi, ~~and Texas (Gazette and Telegraph) corpus~~ - Aaron
+~~Run placetagger.py on Arkansas, Mississippi, and Texas (Gazette and Telegraph) corpus - Aaron~~
 
-Start looking over required readings from earlier in the semester for more information about trends in runaway destinations and connections among Texas, Mississippi, and Arkansas. Do additional readings if necessary - Clare
+~~Start looking over required readings from earlier in the semester for more information about trends in runaway destinations and connections among Texas, Mississippi, and Arkansas. Do additional readings if necessary - Clare~~
 
 
 Wednesday, April 2nd - Friday, April 4th
