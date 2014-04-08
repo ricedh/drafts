@@ -44,9 +44,7 @@ If a lot of NER results:
 
 * Write script to generate coordinates for tagged locations and execute on our data - Aaron
 
-~~Else:
-
-* Manually search for and store coordinates - Kaitlyn~~
+~~Else: Manually search for and store coordinates - Kaitlyn~~
 
 ~~Draft the close reading essay - Clare~~
 
