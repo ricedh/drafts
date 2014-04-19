@@ -3,7 +3,46 @@ drafts
 
 Working drafts of articles for final project
 
-For more information see http://digitalhistory.blogs.rice.edu.
+The basic structure of the final project site will consist of an [introduction](00-introduction.md) splash page, written by Dr. McDaniel. The splash page is going to contain screenshots of the results of our various projects, modeled on [this page](http://dsl.richmond.edu/projects/). Each screenshot will link to a fuller essay answering these questions:
+
+- What is it? (one paragraph description)
+- Why did we make it? (rationale)
+- How did we make it? (methodology)
+- What next? (conclusions, questions, limitations of the method)
+
+Here's the checklist of things we need to do by **Friday, 08:00 AM**.
+
+### Palladio Page
+
+- [ ] Identify more candidate jailers for the Palladio map (Dr. McDaniel)
+- [ ] Write [page section](01-palladio.md) on "how we made it" (Clare)
+- [ ] Revise [page section](01-palladio.md) on "why we made it" (Kaitlyn) - note: some of what is on this page now may be better suited for [NER page](03-ner.md)
+
+### Voyant Page
+
+- [ ] Write up [Voyant page](02-voyant.md) using and editing material from progress reports (Alyssa)
+
+### NER Page
+
+- [ ] Clean remainder of NER results (Aaron)
+- [ ] Write "how we made it” [page section](03-ner.md) (Aaron)
+- [ ] Write "why we made it" [page section](03-ner.md) (Clare) - note: some of the material currently on the [Palladio page](01-palladio.md) may go better here
+- [ ] Make final fusion table examples (Kaitlyn)
+- [ ] write up conclusions section, using close reading and the Fusion Table (Kaitlyn)
+
+### MALLET Page
+
+- [ ] Write [page section](04-mallet.md) on "why we made it" (Daniel)
+- [ ] Write section on how to create topic model and then try different topics to divide the ads (Daniel)
+- [ ] Write section on how the script works to divide the ads using the doc-topics-output file (Dr. McDaniel)
+
+### Twitterbot Page
+
+- [ ] Revise [Twitter essay](05-twitterbot.md) to explain rationale, adding the "On This Day" rationale from our [comments](http://digitalhistory.blogs.rice.edu/2014/04/08/updates-on-twitter-bot/#comments) (Alyssa)
+- [ ] Revise adbot script so that it tweets "On this day" (Dr. McDaniel)
+- [ ] Write up "how we did it" section (Dr. McDaniel)
+
+You can "check off" items by editing this page and putting an X in between the brackets at the beginning of each item.
 
 ## Markdown resources
 
