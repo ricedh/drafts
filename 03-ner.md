@@ -13,9 +13,13 @@ How we got NER running, how the script works, adjustments that had to be made.
 3. Used Google's geocode API to convert each location into corresponding latitude and longitude, as well as full address: street, city, state, zipcode.
 4. For each advertisement, converted each location address into the state code. Created a set of state codes for each advertisement.
 5. Summed the number of state references in each state's set of ads for each state
-6. Exported numbers to spreadsheet for use in Palladio
+6. Exported numbers to spreadsheet for use in Google Fusion Tables
 
 # Conclusions
 
 Findings, questions, limitations.
+
+NER can sometimes tag items incorrectly, which can be a limitation in our data. For example, we found that names of slaves or slave owners were sometimes tagged as locations, and places such as rivers could be tagged as just "Colorado" as opposed to "Colorado River." These outliers can be cleaned up manually, but with a large corpus such as ours, it can be very time consuming. Even a well-written NER script will still make some mistakes, so cleaning up the data is a necessary step when using NER.
+
+One way in which NER can be used is to get a count of how many times a newspaper (or a corpora of newspapers) in one state mentions other states. This can provide insights into how far runaway slaves traveled and ideas about how connected states were in the south. We used Google Fusion Tables ([this tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables) to visualize the results of running the NER script on our advertisement corpora. MORE ON RESULTS WHEN FINISHED WITH GFT.
 
