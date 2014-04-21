@@ -10,6 +10,8 @@ Why did we want to use Voyant? (Might be worth talking here about how the limita
 
 How to use Voyant to do basic text mining.
 
+Voyant is a free, online text-analysis resource. Among its tools, it generates a word cloud of most frequent words, generates graphs of word frequency across the corpus, and lets you compare multiple documents. Once you have a text uploaded, you can play around a lot within the Voyant “skin”, opening and closing different tools, or clicking on a particular word to see trends for that word specifically. It’s also possible to generate a link to the skin that can then be shared or embedded into a page, allowing others to play around with the data on their own.
+
 # Conclusions
 
 Findings, questions, limitations.
