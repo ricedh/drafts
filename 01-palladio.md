@@ -18,6 +18,12 @@ The extensive size of the data set results in certain implications based on the 
 
 Based on these observations, the borderland status of states does change the location trends present in runaway slave advertisements. The advantages of digital tools, however, will help us analyze these conclusions to evaluate the correlation between digital tools and close-reading, as well as possibly reveal unexpected patterns in the data set.
 
+**(I am leaving Clare's essay for now; I want to bounce ideas off of her about which parts should stay with Palladio and which should go with NER. Below are some rough ideas of what I would like to incorporate into this section)**
+
+In looking at the geography of runaway slave advertisements, we were interested in what (if anything) made Texas distinct from other southern states and where slaves were running. Previous scholarship on slavery has shown that Texas, as a frontier that shares a border with Mexico, was a destination for many runaway slaves looking to find freedom. However, it is sometimes difficult to find patterns like this by simply reading through a corpus of runaway slave advertisements. Only a few slave owners mentioned a location to where a slave might be running in advertisements. Even if a slave owner provided a location, it often only shows what the owner perceived of his slave. 
+
+One of the only ways we can see which direction a slave was running in our collection of runaway ads is through jailer's notices. Many jailer's notices contained information about where the slave had run from or where his or her owner was located. Although we generally cannot tell the route that slaves were taking to get to their destinations, connecting paths between where they ran from and where they were captured can give us an idea about where they were possibly heading. Palladio provided us with the necessary tools to visualize these potential paths.
+
 # Methodology
 
 How the Palladio maps were made, step by step.
