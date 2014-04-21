@@ -22,6 +22,18 @@ Based on these observations, the borderland status of states does change the loc
 
 How the Palladio maps were made, step by step.
 
+The first step was finding an appropriate sample from each of the states. Given the capabilities of Palladio, jailer's notices seemed the most beneficial option, since the maps produced would be unified by a single destination. The Bexar, Pulaski, and Jefferson county jails provided a suitable set, since they each had a similar number of advertisements (about 20) and were from around the same time period (the late 1850s).
+
+Data from these three samples was then manually entered into a spreadsheet, which specifically included information on the reported owner location and the runaway location (the county jail). A separate spreadsheet was created with the geographic coordinates listed beside these locations.
+
+The next step was incorporation of this information into the digital visualization tool of [Palladio](http://palladio.designhumanities.org/). After the first spreadsheet (with owner and runaway locations) was uploaded as the primary table, the interface appeared as follows (INSERT SCREENSHOT). Clicking the "Review" or "Extend" button adjacent to reported owner location allowed for addition of the location coordinate information through the "Add a New Table"  option. After the location coordinate table was also added to runaway location, visualization through mapping was possible.
+
+A small earth icon marks the mapping visualization of the uploaded data. Choosing "Point to Point" Under "Map type" revealed "Source Places" and "Destination Places" with dropdown menus of the available data. Selecting "Reported Owner Location" and "Runaway Location" in the respective menus created the following map visualizations (INCLUDE SCREENSHOTS).
+
+Although not many features are currently available through Palladio, the "Count by" option allows a representation of frequency through size points (INCLUDE SCREENSHOT)
+
+*possible additional points: variability of data entry for location, as well as lack of specificity for coordinates; palladio screenshots; other options through palladio?
+
 # Conclusions
 
 Findings, questions, limitations.
