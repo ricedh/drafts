@@ -4,6 +4,12 @@
 
 The method of close-reading runaway slave advertisements between 1835 and 1865 allows for an exploration of whether patterns of listed locations differ between the states, specifically in relationship to how Texas trends might differ. Various newspapers from Mississippi, Texas, and Arkansas provide the data set for this analysis.  Trends are most easily analyzed by individual state, followed by a conversation and comparison of these overall trends between the states.
 
+The data set indicates that Texas ads are overwhelmingly Texas-centric, as opposed to those in Arkansas and Mississippi, which include a more diverse interaction with states outside of themselves. 
+BROAD OVERVIEW
+The extensive size of the data set results in certain implications based on the time-consuming and labor-intensive nature of the manual labor of close reading. When analyzing the data by the human eye, pre-conceived assumptions come into play, and unexpected results are less likely to be found if present. Without digital tools to sift through the information and help identify patterns, the presence of human bias in evaluating the advertisement trends would be more noticeable.  Focusing on multiple elements or the connections between them is also more difficult for a human observer. For example, perhaps there exists a correlation between the amount of the reward and the projected location of the slave or distance between the locations of the advertisement and the owner. Without the extremely labor-intensive process of creating a spreadsheet, this evidence is difficult to analyze. Specific locations (cities and plantations) fall to the generalization and recognizability of states and counties. With over 1000 advertisements in the Mississippi corpora alone, analysis and trends are very difficult to find in a short period of time.
+
+
+
 # Methodology
 
 How we got NER running, how the script works, adjustments that had to be made.
