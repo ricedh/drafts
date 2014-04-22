@@ -14,7 +14,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 
 ### Palladio Page
 
-- [ ] Identify more candidate jailers for the Palladio map (Dr. McDaniel)
+- [X] Identify more candidate jailers for the Palladio map (Dr. McDaniel)
 - [ ] Collect data for AR, TX (Kaitlyn) and MS (Clare) for 1840-1842
 - [ ] Put new data in Palladio (Clare)
 - [ ] Write [page section](01-palladio.md) on "how we made it" (Clare)
