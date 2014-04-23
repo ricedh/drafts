@@ -10,7 +10,9 @@ Additionally, as we read through our initial collection of Texas runaway ads, it
 
 # Methodology
 
-[Voyant](http://voyant-tools.org/) is a free, online text-analysis resource. Among its tools, it generates a word cloud of most frequent words, generates graphs of word frequency across the corpus, and lets you compare multiple documents. Once you have a text uploaded, you can play around a lot within the Voyant “skin”, opening and closing different tools, or clicking on a particular word to see trends for that word specifically. It’s also possible to generate a link to the skin that can then be shared or embedded into a page, allowing others to play around with the data on their own.
+[Voyant](http://voyant-tools.org/) is a free, online text-analysis resource. Among its tools, it generates a word cloud of most frequent words, generates graphs of word frequency across the corpus, and lets you compare multiple documents. Once you have a text uploaded, you can play around within the Voyant “skin”, opening and closing different tools, or clicking on a particular word to see trends for that word specifically. It’s also possible to generate a link to the skin that can then be shared or embedded into a page, allowing others to play around with the data on their own.
+
+Once we had cleaned and prepared our collection of ads for analysis, using Voyant was very straightforward. The Voyant platform is compatible with a wide range of document formats, including plain text, HTML, XML, PDF, RTF, and MS Word. Once in the Voyant skin, it is easy to play around with tools simultaneously, as selecting a word in the "Summary" tool, for example, will automatically pull it up in the "Word Trends" tool. Use the "Words in the Entire Corpus" tool to easily search and store key words into a collection of "favourites". Select multiple words in "Words in the Entire Corpus" to analyze them side-by-side.
 
 # Conclusions
 
