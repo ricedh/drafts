@@ -18,7 +18,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 - [X] Collect data for AR, TX (Kaitlyn) and MS (Clare) for 1840-1842
 - [X] Put new data in Palladio (Clare)
 - [ ] Write [page section](01-palladio.md) on "how we made it" (Clare)
-- [ ] Revise [page section](01-palladio.md) on "why we made it" (Kaitlyn) - note: some of what is on this page now may be better suited for [NER page](03-ner.md)
+- [X] Revise [page section](01-palladio.md) on "why we made it" (Kaitlyn) - note: some of what is on this page now may be better suited for [NER page](03-ner.md)
 - [ ] Write [page section](01-palladio.md) on "what next" (Clare)
 
 
