@@ -1,3 +1,8 @@
+---
+title: Using Palladio to Visualize Ads
+author: Clare Jensen and Kaitlyn Sisk
+...
+
 Page would begin with an image of Palladio map, and a brief description of what the map depicts.
 
 # Rationale
