@@ -14,7 +14,7 @@ Additionally, as we read through our initial collection of Texas runaway ads, it
 
 Once we had cleaned and prepared our collection of ads for analysis, using Voyant was very straightforward. The Voyant platform is compatible with a wide range of document formats, including plain text, HTML, XML, PDF, RTF, and MS Word. Once in the Voyant skin, it is easy to play around with tools simultaneously, as selecting a word in the "Summary" tool, for example, will automatically pull it up in the "Word Trends" tool. Use the "Words in the Entire Corpus" tool to easily search and store key words into a collection of "favourites". Select multiple words in "Words in the Entire Corpus" to analyze them side-by-side.
 
-(screenshot)
+![voyant-screenshot](https://cloud.githubusercontent.com/assets/6466141/2782288/92621190-cb1d-11e3-8ea8-54b94c7d1c9a.png)
 
 There are certain decisions that have to be made before even uploading your documents into Voyant. Throughout the digital reading process, one of our primary questions has been how to split the corpus of ads. For example, uploading a single document of all ads from a single state is useful for looking at language data in aggregate for a single state. This screenshot shows the word "negro" selected from all the Texas ads uploaded as one document.
 
