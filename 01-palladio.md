@@ -2,7 +2,7 @@ Page would begin with an image of Palladio map, and a brief description of what 
 
 # Rationale
 
-Scholarship on fugitive slaves has identified several geographic trends in the directions taken by runaways. Through their research, Franklin and Schweninger found that "slaves living in the Lower Mississippi River Valley or in Mississippi and Alabama were more likely to run south and west than north," making Texas and Mexico possible destinations for runaway slaves
+Scholarship on fugitive slaves has identified several geographic trends in the directions taken by runaways. Through their research, Franklin and Schweninger found that "slaves living in the Lower Mississippi River Valley or in Mississippi and Alabama were more likely to run south and west than north," making Texas and Mexico possible destinations for runaway slaves.
 
 ~~Some slaves ran toward the freedom of the North, but until Canada was reached, fugitive slave laws enforced the capture and return of slaves to their owners in the South. Slaves seeking freedom also headed west, both toward frontier states and toward Mexico, where a fugitive slave law was not in effect to return runaways to the United States. Some slaves, however, were inspired to find reunion with family members, often after being sold west away from their relatives. These trends, then, set the stage for the observations gathered from the runaway slave advertisements.~~
 
