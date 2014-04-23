@@ -26,9 +26,13 @@ Because we were careful to keep our ads in chronological order, the Word Trends 
 
 At a glance, it is easy to see that the Word Trends graph looks very different depending on whether the corpus is segmented into 10 even parts by Voyant, or split into 10-year increments. There’s not one right way to split a corpus, it just depends on what kind of analysis you want to focus on. It is good to keep in mind though, that these decisions made before the Voyant skin is even opened will alter the appearance of the data.
 
-Find [here](http://docs.voyant-tools.org/tools/) a list of all Voyant tools, including some which are not pre-loaded into the basic Voyant skin. 
+Finally, certain corpus categories can be split by geographical location. This method of dividing a corpus is useful for comparing language trends across geographical lines. This screenshot shows the Texas corpus of ads split by the Houston area (*The Telegraph and Texas Register* 1836 to 1860) and the Austin area (*Texas Gazette* 1850 to 1860), and reveals that the word "negro" appears relatively more frequently in the Austin area.
 
-For a tutorial on how to compare one Voyant skin corpus to a separate Voyant skin corpus, visit [this post](http://www.briancroxall.net/2012/07/18/comparing-corpora-in-voyant-tools/) from Brian Croxall.
+![tx-split-screenshot](https://cloud.githubusercontent.com/assets/6466141/2782511/cc32c678-cb20-11e3-9729-9ff9e808fe37.png)
+
+A few useful tips for using Voyant: To apply stopwords, click on the wrench icon in the upper right-hand corner to choose a pre-made list, or add your own. To save a url to the current Voyant skin, create an HTML link to embed, or download an image, click on the floppy icon.
+
+Find [here](http://docs.voyant-tools.org/tools/) a list of all Voyant tools, including some which are not pre-loaded into the basic Voyant skin. For a tutorial on how to compare one Voyant skin corpus to a separate Voyant skin corpus, visit [this post](http://www.briancroxall.net/2012/07/18/comparing-corpora-in-voyant-tools/) from Brian Croxall.
 
 # Conclusions
 
