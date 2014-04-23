@@ -18,11 +18,11 @@ Once we had cleaned and prepared our collection of ads for analysis, using Voyan
 
 There are certain decisions that have to be made before even uploading your documents into Voyant. Throughout the digital reading process, one of our primary questions has been how to split the corpus of ads. For example, uploading a single document of all ads from a single state is useful for looking at language data in aggregate for a single state. This screenshot shows the word "negro" selected from all the Texas ads uploaded as one document.
 
-(screenshot)
+![texas-all-screenshot](https://cloud.githubusercontent.com/assets/6466141/2782332/48828cca-cb1e-11e3-8d7b-5bd9282937de.png)
 
 Because we were careful to keep our ads in chronological order, the Word Trends tool also shows trends over time. However, you can also make the choice to manually split a corpus into separate documents by time increments to more easily track specific changes across the corpus. Or, for an example of how Voyant could be applied to a different kind of primary source, a single book could be split into separate chapters. This screenshot shows the Texas ads split by decade:
 
-(screenshot)
+![texas-all-decade-split-screenshot](https://cloud.githubusercontent.com/assets/6466141/2782338/5902bc8c-cb1e-11e3-8e8a-d0c3cab9d319.png)
 
 At a glance, it is easy to see that the Word Trends graph looks very different depending on whether the corpus is segmented into 10 even parts by Voyant, or split into 10-year increments. There’s not one right way to split a corpus, it just depends on what kind of analysis you want to focus on. It is good to keep in mind though, that these decisions made before the Voyant skin is even opened will alter the appearance of the data.
 
