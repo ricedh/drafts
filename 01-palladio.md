@@ -41,7 +41,7 @@ The maps created for jailer's notices between 1840 and 1842 are disorganized and
 
 The maps created from the data from a single county jail, however, prove much more useful for our purposes. As indicated by the following images, a clear argument is represented through the juxtaposition of the Texas map with the Mississippi and Arkansas maps.
 
-![Pulaski and Jefferson County Jails](https://cloud.githubusercontent.com/assets/6454900/2782370/cbd4615c-cb1e-11e3-8250-d0278d43c712.jpg)
+![Pulaski and Jefferson County Jails](https://cloud.githubusercontent.com/assets/6454900/2784131/4c745700-cb37-11e3-9929-5d9ce92b0cbd.jpg)
 
 ![Bexar County Jail](https://cloud.githubusercontent.com/assets/6454900/2773145/88e008b2-ca90-11e3-9880-0e886e2aba3e.jpg)
 
@@ -53,4 +53,6 @@ Palladio itself is in the process of being updated, so hopefully the user interf
 
 An alternative to Palladio could be Google Maps, which would allow embedding and more advanced visualization options. However, the point to point lines would have to be drawn by hand, which would be labor intensive, especially depending on the size of the data set. 
 
-*next steps*
+Future work in Palladio would primarily focus on collection of different samples in order to corroborate our points and to create additional persuasive visualizations. Another possible expansion would be the use of data from runaway ads, as opposed to from jailer's notices. We could potentially find a hub location and use all fugitive slave ads that included projected runaway directionn from that county.
+
+*conclusion*
