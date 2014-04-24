@@ -14,7 +14,7 @@ One of the only ways we can see which direction a slave was running in our colle
 
 How the Palladio maps were made, step by step.
 
-First, we found two appropriate data sets from each of the states. Given the capabilities of Palladio, jailer's notices seemed the most beneficial option, since the maps produced would be unified by a single destination. The Bexar, Pulaski, and Jefferson county jails provided a suitable sample, since they each had a similar number of advertisements (about 20) and were from around the same time period (the late 1850s).  In addition, we selected another data set from the years 1840 to 1842, including all jailer's notices advertised in each state over those years.
+First, we found two appropriate data sets from each of the states. Given the capabilities of Palladio, jailer's notices seemed the most beneficial option. They almost universally list the owner location as reported by the runaway, thereby providing two locations for mapping (the county jail and the reported owner location). The Bexar, Pulaski, and Jefferson county jails provided a suitable sample, since they each had a similar number of advertisements (about 20) and were from around the same time period (the late 1850s).  In addition, we used another data set of all jailer's notices advertised in each state over the years 1840 to 1842.
 
 Data from these three samples was then manually entered into a spreadsheet, which specifically included information on the reported owner location and the runaway location (the county jail). We also created a separate spreadsheet with the geographic coordinates listed beside these locations.
 
@@ -28,13 +28,12 @@ Although not many features are currently available through Palladio, the "Count 
 
 ![Mississippi size points](https://cloud.githubusercontent.com/assets/6454900/2766742/cc5567d6-ca31-11e3-8525-8823466e84af.jpg)
 
-*possible additional points: variability of data entry for location, as well as lack of specificity for coordinates; palladio screenshots; other options through palladio?
 
 # Conclusions
 
 Findings, questions, limitations.
 
-*include brief introduction*
+Using Palladio as a tool for both visualization and analysis, we produced the following results from the data sets.
 
 ![collage of ad1840-42](https://cloud.githubusercontent.com/assets/6454900/2766948/9ab9b752-ca33-11e3-94e9-59855642eb2b.jpg)
 The maps created for jailer's notices between 1840 and 1842 are disorganized and difficult to interpret. They could potentially be made more readable through the addition of arrows in order to indicate the direction taken, but currently Palladio does not have this capability.
@@ -53,6 +52,6 @@ Palladio itself is in the process of being updated, so hopefully the user interf
 
 An alternative to Palladio could be Google Maps, which would allow embedding and more advanced visualization options. However, the point to point lines would have to be drawn by hand, which would be labor intensive, especially depending on the size of the data set. 
 
-Future work in Palladio would primarily focus on collection of different samples in order to corroborate our points and to create additional persuasive visualizations. Another possible expansion would be the use of data from runaway ads, as opposed to from jailer's notices. We could potentially find a hub location and use all fugitive slave ads that included projected runaway directionn from that county.
+Future work in Palladio would primarily focus on collection of different samples in order to corroborate our points and to create additional persuasive visualizations. Another possible expansion would be the use of data from runaway ads, as opposed to from jailer's notices. We could potentially find a hub location and use all fugitive slave ads that included projected runaway direction from that county.
 
-*conclusion*
+Our findings from this evidence provide a starting point for continued research. The work accomplished suggests that Palladio is a beneficial digital tool in the geographic visualization of evidence. Further improvements in the program will allow for explorations both in and beyond our current data set. Palladio's contributions to the digital humanities will ultimately expand possibilites of analysis previously unavailable to historians.
