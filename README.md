@@ -44,7 +44,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 
 - [X] Revise [Twitter essay](05-twitterbot.md) to explain rationale, adding the "On This Day" rationale from our [comments](http://digitalhistory.blogs.rice.edu/2014/04/08/updates-on-twitter-bot/#comments) (Alyssa)
 - [X] Write [adbot script that tweets "On this day"](https://github.com/ricedh/adbot/blob/master/adbot-otd.py) (Dr. McDaniel)
-- [ ] Write up "how we did it" section (Dr. McDaniel)
+- [X] Write up "how we did it" section (Dr. McDaniel)
 
 You can "check off" items by editing this page and putting an X in between the brackets at the beginning of each item.
 
