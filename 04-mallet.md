@@ -1,3 +1,8 @@
+---
+title: Grouping Documents with Topic Models
+author: Daniel Burns
+...
+
 Screen shot of MALLET topics.
 
 # Rationale

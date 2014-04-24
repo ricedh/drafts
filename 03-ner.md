@@ -1,3 +1,8 @@
+---
+title: Tagging Locations with NER
+author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
+...
+
 ![NER script](https://cloud.githubusercontent.com/assets/6469656/2755492/929e39b4-c969-11e3-8ba7-47b3d265dd37.png)
 
 # Rationale

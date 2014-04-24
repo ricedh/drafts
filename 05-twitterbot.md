@@ -1,3 +1,8 @@
+---
+title: Sharing Primary Sources on Twitter
+author: Alyssa Anderson, Aaron Bronstein, Daniel Burns, Clare Jensen, Caleb McDaniel, and Kaitlyn Sisk
+...
+
 We need to update this essay to include something about "On This Day" idea in the methodology section and make it fit more into the template of our site.
 
 The [@TxRunawayAds](http://twitter.com/TxRunawayAds) account tweets excerpts from advertisements related to runaway slaves in nineteenth-century Texas newspapers, along with links to the page images of the ad in the [Portal to Texas History](http://texashistory.unt.edu).
