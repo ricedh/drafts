@@ -34,3 +34,10 @@ NER can sometimes tag items incorrectly, which can be a limitation in our data. 
 
 One way in which NER can be used is to get a count of how many times a newspaper (or a corpora of newspapers) in one state mentions other states. This can provide insights into how far runaway slaves traveled and ideas about how connected states were in the south. We used Google Fusion Tables ([this tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables) to visualize the results of running the NER script on our advertisement corpora. MORE ON RESULTS WHEN FINISHED WITH GFT.
 
+*Google Fusion Tables section planning*
+
+* possibly shows that Texas referenced itself much more often than other states. Jailer's notices and captured slave notices would reference other states (if slaves said they were from another state), but owners likely didn't think their slaves were running to other states. Could be confirmed by more close readings and comparisons of jailers notices versus slave advertisements
+* our data didn't allow for evenly spread gradient - used buckets - intervals appear random at first glance
+* doesn't allow users to play with results - only presents what author chooses to present
+* possible next steps: making a JavaScript hover map to show each state's mentions in comparison to the other
+
