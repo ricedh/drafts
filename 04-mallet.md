@@ -2,9 +2,6 @@
 title: Grouping Documents with Topic Models
 author: Daniel Burns
 ...
-![Mallet Screenshot]
-(https://cloud.githubusercontent.com/assets/6432995/2804868/649b1c0a-ccaf-11e3-8092-75410eef909f.png)
-
 
 ## Rationale
 
