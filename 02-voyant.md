@@ -43,21 +43,15 @@ Our primary findings in Voyant focused heavily on the use of racial and ethnic d
 
 This graph from shows trends for the word "African" across the entire collection of Texas ads from 1836 to 1860. Over time, occurrences of this word goes down until eventually disappearing. As a class, we speculated about potentially finding evidence of the Atlantic slave trade continuing in the early years of Texas. These trends would suggest that to be the case. Although the United States criminalized international slave trade in 1807, as an independent nation from 1836 to 1846, Texas was not subject to these restrictions. The heaviest use of the word African occurs from the years 1836 (the first year we have data for) to 1838, and then sporadically after that. The latest mention of an African runaway in Texas occurs in 1857, for a slave 38 years old. Presumably over time, the growing international abolition movement and the eventual annexation of Texas to the United States contributed to the disappearance of notices for runaway Africans.
 
-![tx-african-screenshot](https://cloud.githubusercontent.com/assets/6466141/2796762/75804006-cc17-11e3-8170-4af6666883ec.png)
-
 <iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028860042.2957&docIdType=d1397967000233.76be2c7d-45ec-314d-199d-d2220e9971e2%3Aafrican&stopList=stop.en.taporware.txt&mode=document&limit=2&freqsMode=raw"></iframe>
 
 Additionally, "African" appears most frequently in Texas compared to the other states, and slightly more frequently in Mississippi than in Arkansas. This confirms class suspicions from close-reading that Texas had higher rates of Africans than the other states. We also speculated that Mississippi and Texas, with access to ocean ports, have higher rates of African slaves than landlocked Arkansas due to easier shipping trade routes.
-
-![all-states-african-screenshot](https://cloud.githubusercontent.com/assets/6466141/2796767/87ddfbc6-cc17-11e3-9d93-c56157d33125.png)
 
 <iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt&type=african&mode=corpus"></iframe>
 
 Our explorations of the word "African" in Voyant exemplify the ways that digital text mining tools can not only help confirm hypotheses from close-reading but also raise previously unthought of questions for further close-reading. The graph peak of the early years encouraged us to read more closely into the history of international slave trade and abolitionism, and how these relate to the Texas timeline and position as an independent nation.
 
 We also used Voyant to track variations in language descriptors by state. We found that the French word Griff(e) occurred much more frequently in Texas, followed by Mississippi, and not at all in Arkansas. (Just as a side note, this sometimes occurring "e" highlights the importance of checking for variations or abnormalities in spelling when conducting digital research.) Tracking the word “Griffe” alongside "Mulatto" reveals that while Texas and Mississippi have higher use of the word Griff(e), Arkansas has higher use of the word Mulatto. Additionally, Texas and Mississippi -- the states where the French word "Griff" is used -- also have higher occurrences of the word “French” suggesting a more significant presence of French people or the French language in these states. In Arkansas subscribers were more likely to prefer the term Mulatto to refer to someone of part white, part black ancestry, whereas in Texas and Mississippi they used both Mulatto and Griff(e).
-
-![all-comparison-descriptors](https://cloud.githubusercontent.com/assets/6466141/2796768/8de69852-cc17-11e3-9500-086826a53d52.png)
 
 <iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt&type=mulatto&type=french&type=griff&type=griffe&mode=corpus"></iframe>
 
