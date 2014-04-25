@@ -37,6 +37,3 @@ One way in which NER can be used is to get a count of how many times a newspaper
 * our data didn't allow for evenly spread gradient - used buckets - intervals appear random at first glance
 * doesn't allow users to play with results - only presents what author chooses to present
 * possible next steps: making a JavaScript hover map to show each state's mentions in comparison to the other
-
-<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1WSnfP2-F62Do3GsH-_Cey1qIzP94Ox-0n-5Hzl93&amp;viz=MAP&amp;h=false&amp;lat=33.99690524070303&amp;lng=-92.99405781250005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-
