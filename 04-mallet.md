@@ -18,6 +18,8 @@ Our method for using the MALLET topic modeling package to separate ads.
 
 Our first step was to generate three topic models, one for each of the three states for which we had advertisements. To do this we downloaded and ran [MALLET](http://mallet.cs.umass.edu). Because [our data](index.html#our-data) were already stored in separate text files, one for each ad, we were able to train topics on our ads using MALLET's command-line options and a [tutorial on topic modeling at the Programming Historian](http://programminghistorian.org/lessons/topic-modeling-and-mallet).
 
+The methods followed were similar to those in the tutorial above.  The directory was imported from the folder of ads of the respective state.  That directory was then imported into MALLET, which was run to export a text file containing 10 topics from the entire ad directory.  The resulting text file for Arkansas is posted below.
+
 `````
 [0	5	negro county arkansas man jail living stout miles mississippi st runaway territory august twenty francis union crittenden post justice 
 1	5	years complexion dark age color aged copper ranaway woman henry ar hempstead washington phillips height wife undersigned george men 
@@ -30,12 +32,11 @@ Our first step was to generate three topic models, one for each of the three sta
 8	5	high inches feet age years mr yellow william james inst black back miller head scars slender months lost jim 
 9	5	feet man black spoken inches small high fellow ten thirty speaks quick information nation tolerably set memphis sam securing ]
 `````
-
 MALLET also outputs a spreadsheet showing the proportion of each document that is drawn from each of the topics; on each row, the filename of the document is followed by the number of the most prominent topic, followed by the proportion of the document associated with that topic. Other topics and proportions follow on the same row in decreasing order of weight.
 
-In order to separate our ads, we first identified two topics in the keys file that seemed to associated, respectively, with runaway ads and captured notices. For example, in the topic-keys listed above, topic X looks more like a runaway ad because of words like .... while topic Y looks more like a captured notice because of words like ...
+In order to separate our ads, we first identified two topics in the keys file that seemed to associated, respectively, with runaway ads and captured notices. For example, in the topic-keys listed above, topic 7 looks more like a runaway ad because of words like reward, subscriber, and delivery, while topic 5 looks more like a jailors' notice because of their frequent terminology like sheriff, committed, law, and jailor.
 
-Thus, we hypothesized that documents in which topic X was more prominent than topic Y were more likely to be runaway ads, while documents in which topic Y was more prominent than topic X were likely to be captured notices. A [Python script](https://github.com/ricedh/adparsers/blob/master/divide_docs.py), `divide_docs.py`, enabled us to test this assumption. The script analyzes the tab-delimited file output by MALLET and separates the files in each row into two directories, based on whether topic X or topic Y appears first in that file's row. We were then able to perform a close reading on some of the separated files to see whether we had accurately separated ads for captured slaves from those that had not been captured.
+Thus, we hypothesized that documents in which topic 7 was more prominent than topic 5 were more likely to be runaway ads, while documents in which topic 5 was more prominent than topic 7 were likely to be captured notices. A [Python script](https://github.com/ricedh/adparsers/blob/master/divide_docs.py), `divide_docs.py`, enabled us to test this assumption. The script analyzes the tab-delimited file output by MALLET and separates the files in each row into two directories, based on whether topic X or topic Y appears first in that file's row. We were then able to perform a close reading on some of the separated files to see whether we had accurately separated ads for captured slaves from those that had not been captured.
 
 # Conclusions
 
@@ -45,3 +46,5 @@ One concern with the use of topic modeling was the overall accuracy of the compu
 
 However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  One ad discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the Arkansas ads, another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
+
+
