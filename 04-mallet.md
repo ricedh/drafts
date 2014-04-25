@@ -26,3 +26,14 @@ However, there are limitations to this approach.  The first issue is the fact th
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
 
 
+Arkansas slave ads and jailors' notices results:
+
+Jailors' Notices: 
+Accurate: 199
+Error: 9
+
+Runaway Ads:
+Accurate: 289
+Error: 6
+
+
