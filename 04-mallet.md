@@ -19,7 +19,16 @@ Our method for using the MALLET topic modeling package to separate ads.
 Our first step was to generate three topic models, one for each of the three states for which we had advertisements. To do this we downloaded and ran [MALLET](http://mallet.cs.umass.edu). Because [our data](index.html#our-data) were already stored in separate text files, one for each ad, we were able to train topics on our ads using MALLET's command-line options and a [tutorial on topic modeling at the Programming Historian](http://programminghistorian.org/lessons/topic-modeling-and-mallet).
 
 `````
-[Daniel, you should put something here about the actual commands you ran, and an excerpt of the text file that has the topic-keys produced with 10 topics from one of the states. Put the text file inside two lines of backticks, as I've done here, so that Github won't get confused and think it's Markdown.]
+[0	5	negro county arkansas man jail living stout miles mississippi st runaway territory august twenty francis union crittenden post justice 
+1	5	years complexion dark age color aged copper ranaway woman henry ar hempstead washington phillips height wife undersigned george men 
+2	5	black white negro coat hat pantaloons left shirt blue pair cotton pants cloth jeans brown coarse wool worn colored 
+3	5	state rock made river good delivered place countenance free secured tennessee face reasonable red purchased brought boat sold time 
+4	5	years negroes mulatto left large supposed clothing heavy built light hair sic girl bright marks make eyes lafayette men 
+5	5	sheriff committed pay belongs runaway property owner charges law forward prove day slave dealt jailor requested custody county pulaski 
+6	5	boy negro jail county scar john weighs feet sic pounds lbs inst jefferson thomas johnson side saline la weigh 
+7	5	reward named dollars subscriber give ran apprehension delivery person fifty paid twenty hundred plantation teeth stolen night expenses residence 
+8	5	high inches feet age years mr yellow william james inst black back miller head scars slender months lost jim 
+9	5	feet man black spoken inches small high fellow ten thirty speaks quick information nation tolerably set memphis sam securing ]
 `````
 
 MALLET also outputs a spreadsheet showing the proportion of each document that is drawn from each of the topics; on each row, the filename of the document is followed by the number of the most prominent topic, followed by the proportion of the document associated with that topic. Other topics and proportions follow on the same row in decreasing order of weight.
