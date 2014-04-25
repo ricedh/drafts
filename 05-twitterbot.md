@@ -1,6 +1,6 @@
 ---
 title: Sharing Primary Sources on Twitter
-author: Alyssa Anderson, Aaron Bronstein, Daniel Burns, Clare Jensen, Caleb McDaniel, and Kaitlyn Sisk
+author: Alyssa Anderson, Aaron Braunstein, Daniel Burns, Clare Jensen, Caleb McDaniel, and Kaitlyn Sisk
 ...
 
 We need to update this essay to include something about "On This Day" idea in the methodology section and make it fit more into the template of our site.
