@@ -43,7 +43,7 @@ Using Palladio as a tool for both visualization and analysis, we produced the fo
 ![collage of ad1840-42](https://cloud.githubusercontent.com/assets/6454900/2766948/9ab9b752-ca33-11e3-94e9-59855642eb2b.jpg)
 As shown above, jailer's notices between 1840 and 1842 follow no discernible pattern, and the maps are difficult to interpret. The maps could potentially be made more readable through the addition of arrows in order to indicate the direction taken, but currently Palladio does not have this capability.
 
-The maps created from the data for single county jails, however, proved much more informative. By juxtaposing maps of start and end points from Arkansas, Mississippi, and Arkansas jailor's notices, we noticed striking differences in the patterns of runaway paths across states.
+The maps created from the data for individual county jails, however, proved much more informative. By juxtaposing maps of start and end points from Arkansas, Mississippi, and Arkansas jailor's notices, we noticed striking differences in the patterns of runaway paths across states.
 
 ![Pulaski and Jefferson County Jails](https://cloud.githubusercontent.com/assets/6454900/2784131/4c745700-cb37-11e3-9929-5d9ce92b0cbd.jpg)
 
