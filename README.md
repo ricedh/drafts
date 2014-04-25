@@ -24,7 +24,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 
 ### Voyant Page
 
-- [ ] Write up [Voyant page](02-voyant.md) using and editing material from progress reports (Alyssa)
+- [X] Write up [Voyant page](02-voyant.md) using and editing material from progress reports (Alyssa)
 
 ### NER Page
 
