@@ -2,17 +2,18 @@
 title: Grouping Documents with Topic Models
 author: Daniel Burns
 ...
+[Mallet Screenshot]
+(https://cloud.githubusercontent.com/assets/6432995/2804868/649b1c0a-ccaf-11e3-8092-75410eef909f.png)
 
-Screen shot of MALLET topics.
 
-# Rationale
+## Rationale
 
 Why we wanted to separate regular ads from jailor's notices programmatically. 
 
 Through our close readings of our ad corpuses, we quickly realized that a significant portion of the ads present were not in fact ads posted by owners searching for runaways, but of jailers who had captive runaways and were searching for the owners. While most of the language and intent in these ads were similar, there were enough differences to encourage sorting them out from the other ads.  From a geographic standpoint, these ads were the end-points of slaves' runaway journeys, and can be plotted differently than runaway ads, which serve as a starting point.  From a data analysis perspective, they do not include categories of information like reward value or means of escape, and would interfere with the collection of consistent data from ads on those categories.  Finally, the jailors' ads also served as an independent source of information, since sorting them out would lead to new insights on how laws on slave capture and return were put into effect, or how they varied in terms of language from ads posted by slave owners.
 While these ads individually can be identified and sorted out of a corpus, both the number of runaway ads being dealt with and the number of jailors' ads prohibited this due to time constraints.  However, differences in language and terminology between the types of ads made it possible to train a computer to differentiate between them based on these variables.
 
-# Methodology
+## Methodology
 
 Our method for using the MALLET topic modeling package to separate ads.
 
@@ -38,7 +39,7 @@ In order to separate our ads, we first identified two topics in the keys file th
 
 Thus, we hypothesized that documents in which topic 7 was more prominent than topic 5 were more likely to be runaway ads, while documents in which topic 5 was more prominent than topic 7 were likely to be captured notices. A [Python script](https://github.com/ricedh/adparsers/blob/master/divide_docs.py), `divide_docs.py`, enabled us to test this assumption. The script analyzes the tab-delimited file output by MALLET and separates the files in each row into two directories, based on whether topic 5 or topic 7 appears first in that file's row. We were then able to perform a close reading on some of the separated files to see whether we had accurately separated ads for captured slaves from those that had not been captured.
 
-# Conclusions
+## Conclusions
 
 Findings, questions, limitations
 
