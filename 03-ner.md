@@ -115,6 +115,7 @@ The algorithm:
 ![CountStateReferences](https://cloud.githubusercontent.com/assets/6469656/2800861/3f34bee2-cc7a-11e3-983f-0dd6e915d751.png)
 
 The above algorithm makes a few assumptions about the model governing the types of locations that appear in the text. Notice how first, we try to directly match the location to a known list of state names (e.g. "Arkansas") and abbreviations (e.g. "AR" and "Ark."). If it fails, we next try to look up an address for the location. We implemented this using the geopy library with the GoogleV3 geocoder. The [github for the project](https://github.com/geopy/geopy) contains some examples of doing geolocating and address lookup similar to this. Because NER often produces false positives--for example in our data, subscriber names often appeared in all caps and were inaccurately tagged as locations--we check that the result is an address in the region. We chose to make the assumption that true locations always either:
+
 * Include a state name in the merged location entity, or
 * Are a reference to a local or nearby county or city
 
