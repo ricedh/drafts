@@ -29,11 +29,15 @@ Another limitation is the drop in accuracy as the number of topics allowed in th
 Arkansas slave ads and jailors' notices results:
 
 Jailors' Notices: 
+
 Accurate: 199
+
 Error: 9
 
 Runaway Ads:
+
 Accurate: 289
+
 Error: 6
 
 
