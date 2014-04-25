@@ -3,20 +3,21 @@ title: Tagging Locations with NER
 author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
 ...
 
-# Rationale
+## Rationale
 
 A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 1000 advertisements in the Mississippi corpora alone, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These locations lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
 
-Extracting geographic place names from the runaway advertisements through NER gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilites of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without the computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas.
+Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilites of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas.
 
 
-# Methodology
+## Methodology
 
-To compute for each state in the U.S. (and Mexico) the number of ads in a corpus that referenced that state, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder. Since this article is about named entity recognition, this article will focus on the first part, in the context of locations identification.
+To compute for each state in the United States (and Mexico) the number of ads in a corpus that referenced that state, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder. Since this article is about named entity recognition, this article will focus on the first part, in the context of locations identification.
 
 ### Named Entity Recognition
 
-Wikipedia defines named entity recognition succintly:
+Wikipedia defines named entity recognition succinctly: 
+
 > Given a stream of text, determine which items in the text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization).
 
 Stanford's implementation of NER uses a Conditional Random Field (CRF) in order to label a string of text with entities. If you have taken statistics courses, you might be familiar with Hidden Markov Models, which are widely used in the realm of natural language processing for tasks like speech recognition and identifying part of speech of words in a sentence. CRF is very similar to that: the classifier used by NER is trained on a large data set containing a sequence of words in sentences, where each word is annotated with an entity category, if there is one. Then, using sliding windows that take into account words that come before and words that come after the tokens (words) in question, the program maximizes the conditional probability of computed labels (unobserved data) given the tokens (observed data) and the classifier (training data set). Because it is probabilistic, there will always be errors, both false positives and false negatives.
@@ -25,7 +26,7 @@ Our goal was to find all location names. We used the built-in classifier, englis
 
 As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
 
-Once we download NER and cd'd to the directory, we started it with the following UNIX command:
+Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command:
 
 ```
 java -mx1000m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier classifiers/english.conll.4class.distsim.crf.ser.gz -port 8080 -outputFormat inlineXML
@@ -51,7 +52,7 @@ if 'LOCATION' in entities:
     locations[filename] = entities['LOCATION']
 ```
 
-One problem that came up was that location tokens were as small as possible--usually at the word level. That means, if the text contained the phrase "Springfield, Virginia", the locations list would contain usually separate entries for "Springfield" and "Virginia." That behavior is not ideal since it can lead to ambiguity in the location names, and excess results. For example, there are dozens of towns named Springfield in the U.S. More on the ambiguity problem in a bit, but for now, our solution was a function that merges detected locations if they are situated within a certain threshold apart in the original text. We chose a maximum gap length of 2 between the tagged locations for them to be classified as an expression.
+One problem that came up was that location tokens were as small as possible--usually at the word level. That means, if the text contained the phrase "Springfield, Virginia", the locations list would usually separate entries for "Springfield" and "Virginia." That behavior is not ideal since it can lead to ambiguity in the location names, and excess results. For example, there are dozens of towns named Springfield in the U.S. More on the ambiguity problem in a bit, but for now, our solution was a function that merges detected locations if they are situated within a certain threshold apart in the original text. We chose a maximum gap length of 2 between the tagged locations for them to be classified as an expression.
 ```python
 def merge_locations(locs, text):
     """Merges all words in locs list that are spaced at most two characters
@@ -123,7 +124,7 @@ Because of time constraints, we didn't implement that exact algorithm. We starte
 
 Finally, with the state reference numbers in hand, we were able to produce some pretty Google Fusion tables displaying our results. See the next section for that.
 
-# Conclusions
+## Conclusions
 *Findings, questions, limitations.*
 
 There are some limitations of NER that should be kept in mind. For one, it can sometimes tag items incorrectly. For example, we found that names of slaves or slave owners were sometimes tagged as locations, and places such as rivers could be tagged innacurately as the location "Colorado" as opposed to being interpreted as "Colorado River." These outliers can be cleaned up manually, but with a large corpus such as ours, it can be very time consuming. Even a well-written NER script will still make some mistakes, so cleaning up the data is a necessary step when using NER. That said, due to the nature of our project and the focus on the tool rather than the conclusions, we did not manually clean up our tagged locations but only the final state counts (false positives "Colorado" and "Washington") and designed the script to address these issues as intelligently as possible.
@@ -146,4 +147,4 @@ Google Fusion Tables is still an experimental tool and had a few limitations for
 
 Another technical limitation of Google Fusion Tables to keep in mind is that it only allows viewers to see what the author has published, rather than giving them the ability to experiment with the gradient and bucket tools for themselves. Our Google Fusion Tables have data columns for total number of counts, percentage including the state of the newspaper corpus, and percentage without the counts of the main state, yet we published the map that colors states based on the percentage including the main state. Giving the viewer the ability to play with the different features themselves could allow the viewer to make their own conclusions about what the data shows.
 
-These Google Fusion Tables can continue to improve as the results from the NER become cleaner and more precise. Additional research could focus just on jailer's notices (with help from MALLET). Since regular runaway slave advertisements mostly only mention the owner's location and a projected location, looking at jailer's notices would eliminate many of the self-referential advertisements. It also changes the lens through which we look at the data, as the out of state references would have been provided by the slaves rather than the slave owners. In addition, the Google Fusion Tables that we made could be enhanced by using Javascript to change the map shown depending on which state the user's mouse is hovering over. This would enable the viewer to better see the differences between each state.
+These Google Fusion Tables can continue to improve as the results from the NER become cleaner and more precise. Additional research could focus just on jailer's notices (with help from [MALLET](04-mallet.html)). Since regular runaway slave advertisements mostly only mention the owner's location and a projected location, looking at jailer's notices would eliminate many of the self-referential advertisements. It also changes the lens through which we look at the data, as the out of state references would have been provided by the slaves rather than the slave owners. In addition, the Google Fusion Tables that we made could be enhanced by using Javascript to change the map shown depending on which state the user's mouse is hovering over. This would enable the viewer to better see the differences between each state.
