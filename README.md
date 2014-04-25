@@ -38,7 +38,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 
 - [ ] Write [page section](04-mallet.md) on "why we made it" (Daniel)
 - [ ] Write section on how to create topic model and then try different topics to divide the ads (Daniel)
-- [ ] Write section on how the script works to divide the ads using the doc-topics-output file (Dr. McDaniel)
+- [X] Write section on how the script works to divide the ads using the doc-topics-output file (Dr. McDaniel)
 
 ### Twitterbot Page
 
