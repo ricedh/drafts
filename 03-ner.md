@@ -1,5 +1,5 @@
 ---
-title: Tagging Locations with NER
+title: Detecting Locations with NER
 author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
 ...
 
