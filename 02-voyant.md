@@ -47,14 +47,20 @@ This graph from shows trends for the word "African" across the entire collection
 
 ![tx-african-screenshot](https://cloud.githubusercontent.com/assets/6466141/2796762/75804006-cc17-11e3-8170-4af6666883ec.png)
 
+<iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028860042.2957&docIdType=d1397967000233.76be2c7d-45ec-314d-199d-d2220e9971e2%3Aafrican&stopList=stop.en.taporware.txt&mode=document&limit=2&freqsMode=raw"></iframe>
+
 Additionally, "African" appears most frequently in Texas compared to the other states, and slightly more frequently in Mississippi than in Arkansas. This confirms class suspicions from close-reading that Texas had higher rates of Africans than the other states. We also speculated that Mississippi and Texas, with access to ocean ports, have higher rates of African slaves than landlocked Arkansas due to easier shipping trade routes.
 
 ![all-states-african-screenshot](https://cloud.githubusercontent.com/assets/6466141/2796767/87ddfbc6-cc17-11e3-9d93-c56157d33125.png)
+
+<iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt&type=african&mode=corpus"></iframe>
 
 Our explorations of the word "African" in Voyant exemplify the ways that digital text mining tools can not only help confirm hypotheses from close-reading but also raise previously unthought of questions for further close-reading. The graph peak of the early years encouraged us to read more closely into the history of international slave trade and abolitionism, and how these relate to the Texas timeline and position as an independent nation.
 
 We also used Voyant to track variations in language descriptors by state. We found that the French word Griff(e) occurred much more frequently in Texas, followed by Mississippi, and not at all in Arkansas. (Just as a side note, this sometimes occurring "e" highlights the importance of checking for variations or abnormalities in spelling when conducting digital research.) Tracking the word “Griffe” alongside "Mulatto" reveals that while Texas and Mississippi have higher use of the word Griff(e), Arkansas has higher use of the word Mulatto. Additionally, Texas and Mississippi -- the states where the French word "Griff" is used -- also have higher occurrences of the word “French” suggesting a more significant presence of French people or the French language in these states. In Arkansas subscribers were more likely to prefer the term Mulatto to refer to someone of part white, part black ancestry, whereas in Texas and Mississippi they used both Mulatto and Griff(e).
 
 ![all-comparison-descriptors](https://cloud.githubusercontent.com/assets/6466141/2796768/8de69852-cc17-11e3-9500-086826a53d52.png)
+
+<iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt&type=mulatto&type=french&type=griff&type=griffe&mode=corpus"></iframe>
 
 Overall, Voyant has been a very useful tool for our historical project on Texas runaway ads. The majority of Voyant's limitations are due to the fact that the software is still in beta mode. The platform can sometimes be a bit jerky, slow to load, or sometimes gets stuck loading. Scrolling through the tools is not always a smooth, straightforward process. Unfortunately, while the favorites feature is useful, this list can’t be saved for future use when generating a skin URL. Despite these hiccups, we recommend the tool for historians hoping to take a “distant reading” of their documents.
