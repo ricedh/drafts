@@ -3,8 +3,6 @@ title: Tagging Locations with NER
 author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
 ...
 
-![NER script](https://cloud.githubusercontent.com/assets/6469656/2755492/929e39b4-c969-11e3-8ba7-47b3d265dd37.png)
-
 # Rationale
 
 A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 1000 advertisements in the Mississippi corpora alone, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These locations lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
