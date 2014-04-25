@@ -3,8 +3,6 @@ title: Using Voyant for Text Analysis
 author: Alyssa Anderson
 ...
 
-Open with an embedded image from Voyant, and a [link to the full corpus of Texas ads](http://voyant-tools.org/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt).
-
 <iframe width="0" height="0" src="http://voyant-tools.org/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt"></iframe>
 
 # Rationale
