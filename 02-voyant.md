@@ -3,7 +3,7 @@ title: Using Voyant for Text Analysis
 author: Alyssa Anderson
 ...
 
-This page walks through the process of using Voyant for digital text mining. Find [here](http://voyant-tools.org/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt) a link to our entire corpus of runaway ads uploaded into a Voyant skin.
+This page walks through the process of using [Voyant](http://voyant-tools.org/) for digital text mining. Find [here](http://voyant-tools.org/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt) a link to our entire corpus of runaway ads uploaded into a Voyant skin.
 
 ## Rationale
 
