@@ -16,6 +16,18 @@ While these ads individually can be identified and sorted out of a corpus, both 
 
 Our method for using the MALLET topic modeling package to separate ads.
 
+Our first step was to generate three topic models, one for each of the three states for which we had advertisements. To do this we downloaded and ran [MALLET](http://mallet.cs.umass.edu). Because [our data](index.html#our-data) were already stored in separate text files, one for each ad, we were able to train topics on our ads using MALLET's command-line options and a [tutorial on topic modeling at the Programming Historian](http://programminghistorian.org/lessons/topic-modeling-and-mallet).
+
+`````
+[Daniel, you should put something here about the actual commands you ran, and an excerpt of the text file that has the topic-keys produced with 10 topics from one of the states. Put the text file inside two lines of backticks, as I've done here, so that Github won't get confused and think it's Markdown.]
+`````
+
+MALLET also outputs a spreadsheet showing the proportion of each document that is drawn from each of the topics; on each row, the filename of the document is followed by the number of the most prominent topic, followed by the proportion of the document associated with that topic. Other topics and proportions follow on the same row in decreasing order of weight.
+
+In order to separate our ads, we first identified two topics in the keys file that seemed to associated, respectively, with runaway ads and captured notices. For example, in the topic-keys listed above, topic X looks more like a runaway ad because of words like .... while topic Y looks more like a captured notice because of words like ...
+
+Thus, we hypothesized that documents in which topic X was more prominent than topic Y were more likely to be runaway ads, while documents in which topic Y was more prominent than topic X were likely to be captured notices. A [Python script](https://github.com/ricedh/adparsers/blob/master/divide_docs.py), `divide_docs.py`, enabled us to test this assumption. The script analyzes the tab-delimited file output by MALLET and separates the files in each row into two directories, based on whether topic X or topic Y appears first in that file's row. We were then able to perform a close reading on some of the separated files to see whether we had accurately separated ads for captured slaves from those that had not been captured.
+
 # Conclusions
 
 Findings, questions, limitations
