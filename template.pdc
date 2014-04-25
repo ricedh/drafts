@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--This page was produced by pandoc using a shell script. See http://wcm1.web.rice.edu/colophon.html for more information.-->
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$ | $endif$Digital History Methods</title>
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+
+
+
+<body>
+
+<div class="container">
+$if(toc)$
+<div class="toc">
+$toc$
+</div>
+$endif$
+<div class="row">
+<div class="span2">&nbsp;</div>
+<div class="span7">
+
+
+<div class="header">
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+</div>
+
+
+<article>
+
+
+<!--The title is produced by the pandoc template using the title block at the top of the markdown file-->
+<h1>$title$</h1>
+$endif$
+$if(author)$
+<!--The author is produced by the pandoc template using the title block at the top of the markdown file-->
+<div id="dateline">
+By $author$
+</div>
+$endif$
+
+<!--Begin content of the main markdown file for this page, which is processed by pandoc and output as html.-->
+
+
+$body$
+
+<!--End content from the main markdown file for this page.-->
+
+</article>
+
+<p class="revision"><a href="https://github.com/ricedh/drafts/commits/master/$filename$" title="version history on GitHub">revision history for this page </a></p>
+
+<footer>
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+</footer>
+
+<a rel="license" style="clear:both; display:block; padding-top:2em;" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ricedh.github.io" property="cc:attributionName" rel="cc:attributionURL">http://ricedh.github.io</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/ricedh/drafts" rel="cc:morePermissions">http://github.com/ricedh/drafts</a>.
+
+</div>
+
+<div class="span3">&nbsp;</div>
+
+</div>
+</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>
+</html>

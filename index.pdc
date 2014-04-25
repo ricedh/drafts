@@ -1,14 +1,43 @@
-Digital tools and methods can help historians understand the past by supplementing traditional techniques like the close reading of historical documents.
+<h1 style="font-size: 3.6em; margin-bottom:0; padding-bottom:0">DIGITAL HISTORY METHODS</h1>
 
-As students and scholars in the Spring 2014 course [Digital History Methods](http://digitalhistory.blogs.rice.edu) at Rice University, we created this site to showcase a few digital history methods and demonstrate both their advantages and their limitations as historical tools. Each page spotlights the final product of a method or tool such as text mining with Voyant and MALLET, named entity recognition for identifying geographic locations in texts, publishing historical sources on Twitter, or mapping networks with Palladio. By clicking the links below, you can read about our rationale for using each method, our step-by-step methodology, and our conclusions and questions for further research.
+<p class="large"><img style="float:left; width:13%; padding-bottom: 0; border: 1px solid #aaa" src="./digital-runawayad.png" />can help historians understand and present the past by supplementing traditional techniques for reading historical sources like newspapers and runaway slave advertisements.</p>
+
+As students and scholars in the Spring 2014 course [Digital History Methods](http://digitalhistory.blogs.rice.edu) at Rice University, we created this site to showcase a few digital history methods, using a sample data set of nineteenth-century runaway slave ads. Click on these thumbnails to learn about our methods, or read more about [our data](#our-data) below.
+
+<div class="splash">
+<p>
+<div class="splashthumb">
+<a href="01-palladio.html"><img src="./01-palladio.png" /></a>
+<p class="caption">Mapping points</p>
+</div>
+</p>
+<div class="splashthumb">
+<a href="02-voyant.html"><img src="./02-voyant.png" /></a>
+<p class="caption">Text mining</p>
+</div>
+</p>
+<p>
+<div class="splashthumb">
+<a href="03-ner.html"><img src="./03-ner.png"   /></a>
+<p class="caption">Finding locations</p>
+</div>
+<div class="splashthumb">
+<a href="04-mallet.html"><img src="./04-mallet.png"   /></a></p>
+<p class="caption">Topic modelling</p>
+</div>
+<div class="splashthumb">
+<a href="05-twitterbot.html"><img src="./05-twitterbot.png"   /></a>
+<p class="caption">Tweeting history</p>
+</div>
+</p>
+
+</div>
+
+## Our Data
 
 We have applied these methods to a specific kind of historical source: runaway slave advertisements from the antebellum U.S. South. Our ads are drawn from two sources. First, in collaboration with students in Dr. Andrew Torget's digital history class at the University of North Texas, who have published some of their own findings and methods on a [research blog](http://torget.us/HIST5100/research-blog/), we identified and transcribed all runaway ads published between 1835 and 1860 in two Texas newspapers that have been digitized on the [Portal to Texas History](http://texashistory.unt.edu)---the *Telegraph and Texas Register*, published in Houston for most of its run, and the *State Gazette*, published in Austin. We also analyzed advertisements from Arkansas and Mississippi that were transcribed as part of the [Documenting Runaway Slaves](http://aquila.usm.edu/drs/) project at the University of Southern Mississippi.
 
-Before analyzing these sources, we first used digital tools to create one text file for each advertisement in our corpus. Each file's content was comprised exclusively of transcribed text from the ad. We used the filename of each text file to store relevant metadata such as when the ad was published and where. [Read more about our data storage methods and philosophy below](#our-data).
-
-**Thumbnails linking to each page will go here.**
-
-## Our Data
+Before analyzing these sources, we first used digital tools to create one text file for each advertisement in our corpus. Each file's content was comprised exclusively of transcribed text from the ad. We used the filename of each text file to store relevant metadata such as when the ad was published and where. 
 
 Our project conforms to the fifth tenet of [the Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#Mike_Gancarz:_The_UNIX_Philosophy): *Store data in flat text files.* That is, before using any of the methods described on this site, we created a corpus of ads in which each advertisement got its own text file.
 
