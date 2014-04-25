@@ -5,13 +5,13 @@ author: Alyssa Anderson
 
 This page walks through the process of using Voyant for digital text mining. Find [here](http://voyant-tools.org/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt) a link to our entire corpus of runaway ads uploaded into a Voyant skin.
 
-# Rationale
+## Rationale
 
 Digital text-mining tools can help researchers understand document collections that are prohibitively large for a close-reading. Our collection of runaway slave advertisements from Texas, Arkansas, and Mississippi totals over 2,500 individual ads! Not only would it be extremely time consuming to read this entire collection, the consistently short, boilerplate format of runaway ads can make it difficult to really distinguish between them. The ads from Texas, Arkansas, and Mississippi start to all look practically indistinguishable, making it difficult for close-reading alone to recognize pattern breaks between the states, without the assistance of computational data. This is where Voyant comes in. We hoped that the “distant-reading” capabilities of Voyant would be able to pick up on larger word usage trends that are not immediately apparent when reading with the human eye.
 
 Additionally, as we read through our initial collection of Texas runaway ads, it became clear that these ads tell us little about the perspectives of runaway slaves themselves. Information about the slave is always filtered through the attitudes and beliefs of the slaveholder. Working within the limitations of this category of primary source, we became increasingly interested in analyzing this language of the slaveholders. In what sort of discourse on slavery were these subscribers engaged, and were there any differences across state lines? Across time? Voyant’s efficient “reading” skills and visualization capabilities make it easy to immediately spot differences between multiple corpuses or trends across one corpus. As students who have primarily worked with close-reading in the past, digital text-mining tools such as Voyant offer another angle of analysis into a text.
 
-# Methodology
+## Methodology
 
 [Voyant](http://voyant-tools.org/) is a free, online text-analysis resource. Among its tools, it generates a word cloud of most frequent words, generates graphs of word frequency across the corpus, and lets you compare multiple documents. Once you have a text uploaded, you can play around within the Voyant “skin”, opening and closing different tools, or clicking on a particular word to see trends for that word specifically. It’s also possible to generate a link to the skin that can then be shared or embedded into a page, allowing others to play around with the data on their own.
 
@@ -37,7 +37,7 @@ A few useful tips for using Voyant: To apply stopwords, click on the wrench icon
 
 Find [here](http://docs.voyant-tools.org/tools/) a list of all Voyant tools, including some which are not pre-loaded into the basic Voyant skin. For a tutorial on how to compare one Voyant skin corpus to a separate Voyant skin corpus, visit [this post](http://www.briancroxall.net/2012/07/18/comparing-corpora-in-voyant-tools/) from Brian Croxall.
 
-# Conclusions
+## Conclusions
 
 Our primary findings in Voyant focused heavily on the use of racial and ethnic descriptors in the ads. In most runaway ads, the subscriber tends to give some description of the runaway’s complexion or racial status. We were interested in tracking variations in these terms across states.
 
