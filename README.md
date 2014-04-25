@@ -30,7 +30,7 @@ Here's the checklist of things we need to do by **Friday, 08:00 AM**.
 
 - [X] Clean remainder of NER results (Aaron)
 - [ ] Write "how we made it” [page section](03-ner.md) (Aaron)
-- [ ] Write "why we made it" [page section](03-ner.md) (Clare) - note: some of the material currently on the [Palladio page](01-palladio.md) may go better here
+- [X] Write "why we made it" [page section](03-ner.md) (Clare) - note: some of the material currently on the [Palladio page](01-palladio.md) may go better here
 - [ ] Make final fusion table examples (Kaitlyn)
 - [ ] write up conclusions section, using close reading and the Fusion Table (Kaitlyn)
 
