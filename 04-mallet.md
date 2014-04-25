@@ -32,24 +32,7 @@ Thus, we hypothesized that documents in which topic X was more prominent than to
 
 Findings, questions, limitations
 
-One concern with the use of topic modeling was the overall accuracy of the computer's ability to discriminate between similar ads.  Through analysis of the topic models for various states, it was found to have a high degree of reliability.  Out of the 398 Texas Gazette ads, the topic model sorting method split the ads into 195 jailors' ads and 203 runaway ads.  Out of all of these, there were 3 incorrectly identified ads in the jailors' ads, and 1 in the runaway ads.  In this set, there was a 99% accuracy for differentiating between ads.
+One concern with the use of topic modeling was the overall accuracy of the computer's ability to discriminate between similar ads.  Through analysis of the topic models for various states, it was found to have a high degree of reliability.  Out of the 398 Texas Gazette ads, the topic model sorting method split the ads into 195 jailors' ads and 203 runaway ads.  Out of all of these, there were 3 incorrectly identified ads in the jailors' ads, and 1 in the runaway ads.  In this set, there was a 99% accuracy for differentiating between ads.  The Arkansas data set provided similar results.  Out of 199 jailors' notices, 9 were found in error; out of 289 runaway ads, only 6 were in error.  This gave the second data set an overall accuracy of 97%.  With these results, it is possible to trust the results from the topic models to within a reasonable margin of error.
 
 However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  One ad discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the Arkansas ads, another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
-
-
-Arkansas slave ads and jailors' notices results:
-
-Jailors' Notices: 
-
-Accurate: 199
-
-Error: 9
-
-Runaway Ads:
-
-Accurate: 289
-
-Error: 6
-
-
