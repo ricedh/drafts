@@ -50,14 +50,15 @@ $endif$
 $for(include-before)$
 $include-before$
 $endfor$
-$if(title)$
+$if(not-index)$
 </div>
-
-
 <article>
+$endif$
 
 
 <!--The title is produced by the pandoc template using the title block at the top of the markdown file-->
+
+$if(title)$
 <h1>$title$</h1>
 $endif$
 $if(author)$
@@ -74,9 +75,12 @@ $body$
 
 <!--End content from the main markdown file for this page.-->
 
+$if(not-index)$
 </article>
+$else$
+</div>
+$endif$
 
-<p class="revision"><a href="https://github.com/ricedh/drafts/commits/master/$filename$" title="version history on GitHub">revision history for this page </a></p>
 
 <footer>
 
@@ -84,9 +88,12 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-</footer>
 
-<a rel="license" style="clear:both; display:block; padding-top:2em;" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ricedh.github.io" property="cc:attributionName" rel="cc:attributionURL">http://ricedh.github.io</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/ricedh/drafts" rel="cc:morePermissions">http://github.com/ricedh/drafts</a>.
+<a rel="license" style="clear:both; display:inline-block; padding-top:2em;" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ricedh.github.io" property="cc:attributionName" rel="cc:attributionURL">http://ricedh.github.io</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://github.com/ricedh/drafts" rel="cc:morePermissions">http://github.com/ricedh/drafts</a>.
+
+<div class="revision"><a href="https://github.com/ricedh/drafts/commits/master/$filename$" title="version history on GitHub">revision history for this page </a></div>
+
+</footer>
 
 </div>
 
