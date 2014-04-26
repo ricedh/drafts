@@ -70,3 +70,6 @@ Cornell, Sarah. "[Citizens of Nowhere: Fugitive Slaves and Free African American
 Franklin, John Hope, and Loren Schweninger. *Runaway Slaves: Rebels on the Plantation*. New York: Oxford University Press, 2000. 
 
 Wood, Marcus. "Rhetoric and the Runaway: The Iconography of Slave Escape in England and America," in *Blind Memory: Visual Representations of Slavery in England and America, 1780-1865* (New York: Routledge, 2000), 78-94.
+
+[cornell]: http://jah.oxfordjournals.org/content/100/2/351.full
+[carrigan]: http://www.tandfonline.com/doi/pdf/10.1080/01440399908575278
