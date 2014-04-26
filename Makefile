@@ -1,6 +1,6 @@
 # following http://lincolnmullen.com/blog/make-and-pandoc/
 
-PAGES := $(patsubst %.md,html/%.html,$(wildcard 0*.md))
+PAGES := $(patsubst %.md,html/%.html,$(wildcard *.md))
 
 all : $(PAGES)
 
@@ -21,10 +21,9 @@ html/index.html : index.md
 	--variable=filename:index.md \
 	--template=template.html \
 	--css=./bootstrap.css --css=./main.css \
-	index.pdc -o html/index.html
+	$< -o $@
 
 clean :
 	rm $(PAGES)
-	rm html/index.html
 
 rebuild : clean all html/index.html
