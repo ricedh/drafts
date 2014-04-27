@@ -7,14 +7,10 @@ Screen shot of MALLET topics.
 
 ## Rationale
 
-Why we wanted to separate regular ads from jailor's notices programmatically. 
-
 Through our close readings of our runaway slave advertisement corpora, we quickly realized that a significant portion of the ads present were not ads posted by owners searching for runaways, but ads posted by jailers who had captive runaways and were searching for the owners. While most of the language and intent in these ads were similar, there were enough differences to justify sorting them out from the other ads.  From a geographic standpoint, these ads were the end-points of slaves' runaway journeys, and can be plotted differently than runaway ads, which serve as a starting point of slaves' journeys.  From a data analysis perspective, the ads do not include categories of information like reward value or means of escape and would interfere with the collection of consistent data from ads on those categories.  Finally, the capture notices also served as an independent source of information, since sorting them out would lead to new insights on how laws on slave capture and return were put into effect, or how they varied in terms of language from ads posted by slave owners.
 While these ads individually can be identified and sorted out of a corpus, both the number of runaway ads being dealt with and the number of capture notices prohibited this due to time constraints.  However, differences in language and terminology between the types of ads made it possible to train a computer to differentiate between them based on these variables.
 
 ## Methodology
-
-Our method for using the MALLET topic modeling package to separate ads.
 
 Our first step was to generate three topic models, one for each of the three states for which we had advertisements. To do this we downloaded and ran [MALLET](http://mallet.cs.umass.edu). Because [our data](index.html#our-data) were already stored in separate text files, one for each ad, we were able to train topics on our ads using MALLET's command-line options and a [tutorial on topic modeling at the Programming Historian](http://programminghistorian.org/lessons/topic-modeling-and-mallet).
 
@@ -40,12 +36,8 @@ Thus, we hypothesized that documents in which topic 7 was more prominent than to
 
 ## Conclusions
 
-Findings, questions, limitations
-
 One concern with the use of topic modeling was the overall accuracy of the computer's ability to discriminate between similar ads.  Through analysis of the topic models for various states, it was found to have a high degree of reliability.  Out of the 398 Texas Gazette ads, the topic model sorting method split the ads into 195 capture notices and 203 runaway ads.  Manually searching the text of these sorted ads, we found there were 3 incorrectly identified ads in the capture notices and 1 in the runaway ads.  In this set, there was a 99% accuracy for differentiating between ads.  The Arkansas data set provided similar results.  Out of 199 capture notices, 9 were found in error; out of 289 runaway ads, only 6 were in error.  This gave the second data set an overall accuracy of 97%.  With these results, it is possible to trust the results from the topic models to within a reasonable margin of error.
 
 However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  One ad discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the Arkansas ads, another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
 
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
-
-(I can potentially put charts of the number of ads over time in here, but I've graphed them all out, and there aren't a lot of obvious conclusions to draw from them.  Would we rather include more data, or stick to the main subject?)
