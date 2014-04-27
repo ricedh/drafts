@@ -27,7 +27,7 @@ Because we were careful to keep our ads in chronological order, the Word Trends 
 
 ![All Texas ads split by decade](https://cloud.githubusercontent.com/assets/6466141/2782338/5902bc8c-cb1e-11e3-8e8a-d0c3cab9d319.png)
 
-At a glance, it is easy to see that the Word Trends graph looks very different depending on whether the corpus is segmented into 10 even parts by Voyant, or split into 10-year increments. There’s not one right way to split a corpus, it just depends on what kind of analysis you want to focus on. It is good to keep in mind though, that these decisions might alter the appearance of the data.
+At a glance, it is easy to see that the Word Trends graph looks very different depending on whether the corpus is segmented into 10 even parts by Voyant, or split into 10-year increments. There’s not one right way to split a corpus, it just depends on what kind of analysis you want to focus on. It is good to keep in mind though, that these decisions could alter the appearance of the data.
 
 Finally, certain corpus categories can be split by geographical location. This method of dividing a corpus is useful for comparing language trends across geographical lines. This screenshot shows the Texas corpus of ads split by the Houston area (*The Telegraph and Texas Register* 1836 to 1860) and the Austin area (*Texas Gazette* 1850 to 1860), and reveals that the word "negro" appears relatively more frequently in the Austin area.
 
