@@ -139,15 +139,15 @@ Using the NER script, we were able to analyze our hypotheses that Texas was more
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1eqWyjk4LrP4cnkB2-O9YD-FZKIfg8KE2f2a2s2ST&amp;viz=MAP&amp;h=false&amp;lat=32.30456213321756&amp;lng=-89.39054218750005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Texas map</p>
+<p class="caption">Number of mentions of states in Texas ad corpus, 1835-1860</p>
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1zqezAZk0FRZnfDEraQRD1dcl471zN8VzsI6Up-L5&amp;viz=MAP&amp;h=false&amp;lat=33.26511829579128&amp;lng=-91.80753437500006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Mississippi map</p>
+<p class="caption">Number of mentions of states in Mississippi ad corpus, 1835-1860</p>
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1WSnfP2-F62Do3GsH-_Cey1qIzP94Ox-0n-5Hzl93&amp;viz=MAP&amp;h=false&amp;lat=34.83073025937851&amp;lng=-91.89542500000006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Arkansas map</p>
+<p class="caption">Number of mentions of states in Arkansas ad corpus, 1835-1860</p>
 
 When viewed in conjunction, the three maps show that Texas runaway slave advertisements were indeed slightly more self-referential than advertisements in Arkansas and Mississippi, which confirms our hypothesis. This could be due to the fact that Texas was a border land, so many runaway slaves were likely heading towards more remote areas, such as western Texas and Mexico, and not towards the rest of the Southern states. Texas is additionally the only state of the three to mention Mexico, but it does so fewer times than we were expecting. Arkansas is the least self-referential, which supports our earlier hypothesis outlined in the [Palladio section](01-palladio.html) that Arkansas was somewhat of a border land as well. The fact that about half of the total state references in the corpus are locations outside of Arkansas could be because Arkansas had more capture notices that advertised runaway slaves from other states.  
 
