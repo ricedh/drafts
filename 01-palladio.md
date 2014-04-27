@@ -29,19 +29,20 @@ Next, we uploaded our data to Palladio for visualization. Merging the "from" and
 
 Although Palladio's features are currently limited, one that proved useful to us was the "Count by" option. Shaded circles of varying sizes depict the frequency of each location in the data set, as shown in the following image.
 
-![Mississippi size points](https://cloud.githubusercontent.com/assets/6454900/2766742/cc5567d6-ca31-11e3-8525-8823466e84af.jpg)
+![Mississippi 1840-42](https://cloud.githubusercontent.com/assets/6454900/2766742/cc5567d6-ca31-11e3-8525-8823466e84af.jpg)
 
 
 ## Conclusions
 
 Using Palladio as a tool for both visualization and analysis, we produced the following results from the data sets.
 
-![collage of ad1840-42](https://cloud.githubusercontent.com/assets/6454900/2766948/9ab9b752-ca33-11e3-94e9-59855642eb2b.jpg)
+![Mississippi, Arkansas, and Texas 1840-42](https://cloud.githubusercontent.com/assets/6454900/2766948/9ab9b752-ca33-11e3-94e9-59855642eb2b.jpg)
 As shown above, jailers' notices between 1840 and 1842 follow no discernible pattern, and the maps are difficult to interpret. The maps could potentially be made more readable through the addition of arrows in order to indicate the direction taken, but currently Palladio does not have this capability.
 
 The maps created from the data for individual county jails, however, proved much more informative. By juxtaposing maps of start and end points from Arkansas, Mississippi, and Texas jailers' notices, we observed striking differences in the patterns of runaway paths across states.
 
-![Pulaski and Jefferson County Jails](https://cloud.githubusercontent.com/assets/6454900/2784131/4c745700-cb37-11e3-9929-5d9ce92b0cbd.jpg)
+![Pulaski and Jefferson County jails](https://cloud.githubusercontent.com/assets/6454900/2784131/4c745700-cb37-11e3-9929-5d9ce92b0cbd.jpg)
+![Bexar County jail](https://cloud.githubusercontent.com/assets/6454900/2773145/88e008b2-ca90-11e3-9880-0e886e2aba3e.jpg)
 
 A clear argument is contained in the above images. The maps of Arkansas and Mississippi indicate that runaways came from a variety of directions and without any significant pattern. The map of Texas, however, suggests that fugitive slaves caught in that region had almost universally run southwest, presumably toward Mexico. Our data supports our hypothesss that Texas had patterns of runaway slave paths different from those of other states.
 
