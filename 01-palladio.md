@@ -3,7 +3,7 @@ title: Using Palladio to Visualize Ads
 author: Clare Jensen, Kaitlyn Sisk, and Aaron Braunstein
 ...
 
-This page discusses the geographic digital tool [Palladio](http://palladio.designhumanities.org/) and its use to visualize paths of runaway slaves collected from jailers' notices.c
+This page discusses the geographic digital tool [Palladio](http://palladio.designhumanities.org/) and its use to visualize paths of runaway slaves collected from jailers' notices.
 
 ## Rationale
 
