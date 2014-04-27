@@ -55,6 +55,10 @@ where the first two letters represent the state in which the ad was published, t
 
 Storing our data in this way made it easy to regroup and recombine ads according to different criteria using simple bash commands, shell scripts, or graphical programs like the Finder in Mac OS X. Files could easily be sorted in chronological order or by other fields stored in the filename. Having the ads already split into small text files enhanced the performance of several of the digital tools we used, like MALLET and NER. And using information contained in the filenames, we were also able to use additional scripts to [count ads by year, month or day](https://github.com/ricedh/adparsers/blob/master/countads.sh) or [to excerpt and Tweet ads](https://github.com/ricedh/adbot).
 
+</div>
+
+<div class="article">
+
 ## Bibliography
 
 Ashton, Susanna, and Jonathan D. Hepworth. "[Jackson Unchained: Reclaiming a Fugitive Landscape][appendix]," *The Appendix*, November 5, 2013.
@@ -74,3 +78,4 @@ Wood, Marcus. "Rhetoric and the Runaway: The Iconography of Slave Escape in Engl
 [cornell]: http://jah.oxfordjournals.org/content/100/2/351.full
 [carrigan]: http://www.tandfonline.com/doi/pdf/10.1080/01440399908575278
 [appendix]: http://theappendix.net/issues/2013/10/reclaiming-a-fugitive-landscape
+
