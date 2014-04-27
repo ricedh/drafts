@@ -1,12 +1,11 @@
 ---
 title: Using Palladio to Visualize Ads
-author: Clare Jensen, Kaitlyn Sisk, and Aaron Braunstein
+author: Clare Jensen and Kaitlyn Sisk
 ...
 
 This page discusses the geographic digital tool Palladio and its use to visualize paths of runaway slaves collected from capture notices.
 
 ## Rationale
-*What's the point?*
 
 Scholarship on fugitive slaves has identified several geographic trends in the directions taken by runaways. Some slaves temporarily "laid out" in the vicinity of their owner's farm or plantation, while others ran farther with the intent to stay with relatives or to reach freedom. Franklin and Schweninger's research found that "slaves living in the Lower Mississippi River Valley or in Mississippi and Alabama were more likely to run south and west than north," making Texas and Mexico possible destinations for runaway slaves [(Franklin and Schweninger, 112)](index.html#bibliography).
 
@@ -19,7 +18,6 @@ However, the trends we discovered through close reading have there limitations. 
 One source of information that provides a truer sense of runaways' start and end locations available to historians is jailers' notices, a data set that Franklin and Schweninger did not utilize in analyzing slaves' projected destinations. Many jailers' notices contain information about where the slave had run from or where his or her owner lived. Although we generally cannot tell which routes runaway slaves took to get to their destinations, simply connecting points at their start location and where where they were captured gives us an idea about where they were heading. The web application Palladio enabled us to visualize these potential paths.
 
 ## Methodology
-*How we made the maps.*
 
 To create our maps using Palladio, we first chose two sets of jailers' notices from each of the states. Jailers' notices were the best choice for visualizing runaway paths because they almost universally list the owner's location as reported by the runaway, thereby providing two locations for mapping: the county jail and the reported owner location. The Bexar, Pulaski, and Jefferson county jails provided a suitable sample, since they each had a similar number of advertisements, about 20, and were all from the late 1850s. In addition, we used the set of all jailers' notices advertised in each state over the years 1840 to 1842.
 
@@ -35,7 +33,6 @@ Although Palladio's features are currently limited, one that proved useful to us
 
 
 ## Conclusions
-*Findings, questions, and limitations.*
 
 Using Palladio as a tool for both visualization and analysis, we produced the following results from the data sets.
 
