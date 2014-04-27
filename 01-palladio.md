@@ -3,7 +3,7 @@ title: Using Palladio to Visualize Ads
 author: Clare Jensen, Kaitlyn Sisk, and Aaron Braunstein
 ...
 
-This page discusses the geographic digital tool Palladio and its use to visualize paths of runaway slaves collected from jailers' notices.c
+This page discusses the geographic digital tool [Palladio](http://palladio.designhumanities.org/) and its use to visualize paths of runaway slaves collected from jailers' notices.c
 
 ## Rationale
 
@@ -15,7 +15,7 @@ In terms of the other states, many jailers' notices in Arkansas advertised captu
 
 However, the trends we discovered through close reading have their limitations. As an initial method of familiarizing ourselves with the data, close reading is beneficial, but it is difficult to find patterns by simply reading through a corpus of runaway slave advertisements. In only a few advertisements did slave owners mention a location where their slave might be running. Even when a slave owner did mention a destination, that location often only represented where the owner guessed the runaway was headed. One slave owner in an 1836 ad from the [*Arkansas Gazette*](http://aquila.usm.edu/drs/4/) was more candid than most when he said, “I have dreamed, with both eyes open, that he went toward the Spanish county; but as dreams are like some would be thought honest men―quite uncertain―he may have gone some other directions.” Even when they did not directly state it, however, slave owners did subtly acknowledge their lack of complete knowledge of where their slaves were headed.
 
-One source of available information that provides a truer sense of runaways' start and end locations is jailers' notices, a data set that Franklin and Schweninger did not utilize in analyzing slaves' projected destinations. Many jailers' notices contain information about where the slave had run from or where his or her owner lived. Although we generally cannot tell which routes runaway slaves took to get to their destinations, simply connecting points at their start location and where they were captured gives us an idea about where they were heading. The web application [Palladio](http://palladio.designhumanities.org/) enabled us to visualize these potential paths.
+One source of available information that provides a truer sense of runaways' start and end locations is jailers' notices, a data set that Franklin and Schweninger did not utilize in analyzing slaves' projected destinations. Many jailers' notices contain information about where the slave had run from or where his or her owner lived. Although we generally cannot tell which routes runaway slaves took to get to their destinations, simply connecting points at their start location and where they were captured gives us an idea about where they were heading. The web application Palladio enabled us to visualize these potential paths.
 
 ## Methodology
 
