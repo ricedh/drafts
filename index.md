@@ -85,11 +85,12 @@ Cornell, Sarah. "[Citizens of Nowhere: Fugitive Slaves and Free African American
 
 Franklin, John Hope, and Loren Schweninger. *Runaway Slaves: Rebels on the Plantation*. New York: Oxford University Press, 2000. 
 
-Kelley, Sean. "Blackbirders and Bozales: African-Born Slaves on the Lower Brazos River of Texas in the Nineteenth Century." Civil War History LIV.4 (2008): 406-23.
+Kelley, Sean. "[Blackbirders and Bozales: African-Born Slaves on the Lower Brazos River of Texas in the Nineteenth Century][projectmuse]." Civil War History LIV.4 (2008): 406-23.
 
 Wood, Marcus. "Rhetoric and the Runaway: The Iconography of Slave Escape in England and America," in *Blind Memory: Visual Representations of Slavery in England and America, 1780-1865* (New York: Routledge, 2000), 78-94.
 
 [cornell]: http://jah.oxfordjournals.org/content/100/2/351.full
 [carrigan]: http://www.tandfonline.com/doi/pdf/10.1080/01440399908575278
 [appendix]: http://theappendix.net/issues/2013/10/reclaiming-a-fugitive-landscape
+[projectmuse]: http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/civil_war_history/v054/54.4.kelley.html
 
