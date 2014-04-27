@@ -3,6 +3,8 @@ title: Detecting Locations with NER
 author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
 ...
 
+This pages discusses the digital data collection tool Named Entity Recognition (NER) and its use in organizing the geographic information in runaway slave advertisements.
+
 ## Rationale
 
 In past analyses of runaway slave advertisements, the primary method utilized has been close reading, as illustrated in John Hope Franklin and Loren Schweninger's *Runaway Slaves: Rebels on the Plantations*. These authors chose fugitive slave advertisements as relatively credible sources (since owners would have high incentives to provide accurate descriptions) and employed close reading to observe the nature of slavery on a personal level ([Franklin and Scheninger, 295](index.html#bibliography)).
