@@ -3,8 +3,7 @@ title: Grouping Documents with Topic Models
 author: Daniel Burns
 ...
 
-## MALLET and Topic Modelling
-In this section, we examine how the software MALLET can be used to analyze and identify subtopics within our ad database.  Through the use of this tool, ads can be automatically sorted into specific categories where they can be analyzed separately.  THrough this approach, newer and more specific questions can be explored within the data.
+In this section, we examine how the software [MALLET](http://mallet.cs.umass.edu) can be used to analyze and identify subtopics within our set of runaway ads. Through the use of this tool, we found that ads could be reliably sorted into specific categories, such as runaway ads and captured runaway notices, where they could be analyzed separately. 
 
 ## Rationale
 

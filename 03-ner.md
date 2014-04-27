@@ -3,11 +3,15 @@ title: Detecting Locations with NER
 author: Aaron Braunstein, Clare Jensen, and Kaitlyn Sisk
 ...
 
+This pages discusses the digital data collection tool Named Entity Recognition (NER) and its use in organizing the geographic information in runaway slave advertisements.
+
 ## Rationale
 
-A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 1000 advertisements in the Mississippi corpora alone, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These locations lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
+In past analyses of runaway slave advertisements, the primary method utilized has been close reading, as illustrated in John Hope Franklin and Loren Schweninger's *Runaway Slaves: Rebels on the Plantations*. These authors chose fugitive slave advertisements as relatively credible sources (since owners would have high incentives to provide accurate descriptions) and employed close reading to observe the nature of slavery on a personal level ([Franklin and Scheninger, 295](index.html#bibliography)).
 
-Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilites of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas.
+Our own observations focused on geographic trends in the advertisements. A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 1000 advertisements in the Mississippi corpora alone, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These locations lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
+
+Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilites of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas. These number trends allowed us to make other digital products like Google Fusion Tables (explained in the Conclusion) in order to illustrate these trends visually.
 
 
 ## Methodology
@@ -139,15 +143,15 @@ Using the NER script, we were able to analyze our hypotheses that Texas was more
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1eqWyjk4LrP4cnkB2-O9YD-FZKIfg8KE2f2a2s2ST&amp;viz=MAP&amp;h=false&amp;lat=32.30456213321756&amp;lng=-89.39054218750005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Texas map</p>
+<p class="caption">Number of mentions of states in Texas ad corpus, 1835-1860</p>
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1zqezAZk0FRZnfDEraQRD1dcl471zN8VzsI6Up-L5&amp;viz=MAP&amp;h=false&amp;lat=33.26511829579128&amp;lng=-91.80753437500006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Mississippi map</p>
+<p class="caption">Number of mentions of states in Mississippi ad corpus, 1835-1860</p>
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1WSnfP2-F62Do3GsH-_Cey1qIzP94Ox-0n-5Hzl93&amp;viz=MAP&amp;h=false&amp;lat=34.83073025937851&amp;lng=-91.89542500000006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-<p class="caption">Arkansas map</p>
+<p class="caption">Number of mentions of states in Arkansas ad corpus, 1835-1860</p>
 
 When viewed in conjunction, the three maps show that Texas runaway slave advertisements were indeed slightly more self-referential than advertisements in Arkansas and Mississippi, which confirms our hypothesis. This could be due to the fact that Texas was a border land, so many runaway slaves were likely heading towards more remote areas, such as western Texas and Mexico, and not towards the rest of the Southern states. Texas is additionally the only state of the three to mention Mexico, but it does so fewer times than we were expecting. Arkansas is the least self-referential, which supports our earlier hypothesis outlined in the [Palladio section](01-palladio.html) that Arkansas was somewhat of a border land as well. The fact that about half of the total state references in the corpus are locations outside of Arkansas could be because Arkansas had more capture notices that advertised runaway slaves from other states.  
 
