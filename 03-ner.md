@@ -137,7 +137,7 @@ A limitation of the extension of NER in computing state counts is ambiguous plac
 
 Using the NER script, we were able to analyze our hypotheses that Texas was more self-referential and the only state to mention Mexico by getting a count of how many times a state was mentioned in the Mississippi, Arkansas, and Texas newspapers. One way to visualize the results of this data is through Google Fusion Tables. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables). By shading each mentioned state with a color intensity based on its percentage of total references, we were quickly able to illustrate the results of the NER counts. 
 
-<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1eqWyjk4LrP4cnkB2-O9YD-FZKIfg8KE2f2a2s2ST&amp;viz=MAP&amp;h=false&amp;lat=32.30456213321756&amp;lng=-89.39054218750005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+<iframe width="100%" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1eqWyjk4LrP4cnkB2-O9YD-FZKIfg8KE2f2a2s2ST&amp;viz=MAP&amp;h=false&amp;lat=32.30456213321756&amp;lng=-89.39054218750005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 Texas map
 
 <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1zqezAZk0FRZnfDEraQRD1dcl471zN8VzsI6Up-L5&amp;viz=MAP&amp;h=false&amp;lat=33.26511829579128&amp;lng=-91.80753437500006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
