@@ -16,7 +16,7 @@ To compute for each state in the United States (and Mexico) the number of ads in
 
 ### Named Entity Recognition
 
-Wikipedia defines named entity recognition succinctly: 
+[Wikipedia](http://en.wikipedia.org/wiki/Named_entity_recognition) defines named entity recognition succinctly: 
 
 > Given a stream of text, determine which items in the text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization).
 
