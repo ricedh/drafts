@@ -45,7 +45,7 @@ This embedded graph shows trends for the word "African" across the entire collec
 
 <iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028860042.2957&docIdType=d1397967000233.76be2c7d-45ec-314d-199d-d2220e9971e2%3Aafrican&stopList=stop.en.taporware.txt&mode=document&limit=2&freqsMode=raw"></iframe>
 
-<p class="caption">Embedded trends within all Texas ads</p>
+<p class="caption">Embedded trends for "African" within all Texas ads</p>
 
 As a note, one of the benefits of Voyant is that it allows users to copy an html link to embed Voyant tools into their own blog. Rather than a static screenshot, readers can change the settings on the embedded tool. Try playing around with the settings on this embedded graph of trends for the word "African" and all following graphs.
 
@@ -53,7 +53,7 @@ The word "African" appears most frequently in Texas compared to the other states
 
 <iframe width="395" height="560" src="http://voyant-tools.org/tool/TypeFrequenciesChart/?corpus=1398028124350.4052&stopList=stop.en.taporware.txt&type=african&mode=corpus"></iframe>
 
-<p class="caption">Embedded trends within all three states</p>
+<p class="caption">Embedded trends for "African" within all three states</p>
 
 Our explorations of the word "African" in Voyant exemplify the ways that digital text mining tools can not only help confirm hypotheses from close-reading but also raise previously unthought of questions for further close-reading. Chronological and georgaphical trends for the word "African" encouraged us to research the history of international slave trade and abolitionism, and think about how these relate to Texas's history and its position as an independent nation.
 
