@@ -11,7 +11,7 @@ In past analyses of runaway slave advertisements, the primary method utilized ha
 
 Our own observations focused on geographic trends in the advertisements, however. A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 2500 advertisements in the corpora, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These location lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
 
-Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilites of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas. These number trends allowed us to make other digital products like Google Fusion Tables (explained in the Conclusion) in order to illustrate these trends visually.
+Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilities of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas. These number trends allowed us to make other digital products like Google Fusion Tables (explained in the Conclusion) in order to illustrate these trends visually.
 
 
 ## Methodology
@@ -26,11 +26,11 @@ To compute for each state in the United States (and Mexico) the number of ads in
 
 Stanford's implementation of NER uses a Conditional Random Field (CRF) in order to label a string of text with entities. If you have taken statistics courses, you might be familiar with Hidden Markov Models, which are widely used in the realm of natural language processing for tasks like speech recognition and identifying part of speech of words in a sentence. CRF is very similar to that: the classifier used by NER is trained on a large data set containing a sequence of words in sentences, where each word is annotated with an entity category, if there is one. Then, using sliding windows that take into account words that come before and words that come after the tokens (words) in question, the program stochastically generates a state (label) for each word, whether that be "location," "organization," "person," etc. Because it is probabilistic, there will always be errors, both false positives and false negatives. For a more technical overview of the differences of HMMs and CRFs, please read [this blog post](http://prateekvjoshi.com/2013/02/23/what-are-conditional-random-fields/).
 
-Our goal was to find all location names. We used the built-in classifier, english.conll.4class, but if you want to train your own classifier, you can of course do that. The Wilkens Group at the University of Notre Dame has a good [tutorial on training your own classifier](https://blogs.nd.edu/wilkens-group/2013/10/15/training-the-stanford-ner-classifier-to-study-nineteenth-century-american-fiction/) if you are interested. They used NER on a 19th century American Fiction data set, and their tutorial outlines the advantages of training your own classifier.
+### Generating a List of Referenced Locations in Each Ad
 
-As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
+Our goal was to find all location names. As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
 
-Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command. For an explanation of the arguments to the NER program, please read this short [introduction to initializing NER for using Pyner](http://outofabrownpaperbag.wordpress.com/2013/07/04/stanford-ner-and-pyner-the-beginnings-for-beginners/).
+Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command. For an explanation of the arguments to the NER program, please read this short [introduction to initializing NER for using Pyner](http://outofabrownpaperbag.wordpress.com/2013/07/04/stanford-ner-and-pyner-the-beginnings-for-beginners/). Note that we use the english.conll.4class classifier. It served our purposes, but if you want to train your own classifier, you can of course do that. The Wilkens Group at the University of Notre Dame has a good [tutorial on training your own classifier](https://blogs.nd.edu/wilkens-group/2013/10/15/training-the-stanford-ner-classifier-to-study-nineteenth-century-american-fiction/) if you are interested. They used NER on a 19th century American Fiction data set, and their tutorial outlines the advantages of training your own classifier.
 
 ```
 java -mx1000m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier classifiers/english.conll.4class.distsim.crf.ser.gz -port 8080 -outputFormat inlineXML
@@ -41,19 +41,15 @@ Then in Python, after installing Pyner, we initialized the tagger with the follo
 tagger = ner.SocketNER(host='localhost', port=8080)
 ```
 
-Next, we called the get_entities method of the tagger, iteratively using each runaway slave ad in the corpus (a directory name) as the parameter:
+Next, we called the get_entities method of the tagger, iteratively using each runaway slave ad in the corpus (a directory name) as the parameter. We checked if the LOCATION key existed in the entities dictionary (it also tags person, organization, etc), and if so, stored the LOCATION values in a locations dictionary that maps each filename to the detected locations:
 ```python
 for filename in os.listdir(directory):
     if filename.endswith(".txt"):
         with open(os.path.join(directory, filename), 'r') as f:
             text = f.read().decode("utf8")
             entities = tagger.get_entities(text)
-```
-
-We checked if the LOCATION key existed in the entities dictionary (it also tags person, organization, etc), and if so, stored the LOCATION values in a locations dictionary that maps each filename to the detected locations:
-```python
-if 'LOCATION' in entities:
-    locations[filename] = entities['LOCATION']
+			if 'LOCATION' in entities:
+			    locations[filename] = entities['LOCATION']
 ```
 
 One problem that came up was that location tokens were as small as possible--usually at the word level. That means, if the text contained the phrase "Springfield, Virginia", the locations list would usually separate entries for "Springfield" and "Virginia." That behavior is not ideal since it can lead to ambiguity in the location names, and excess results. For example, there are dozens of towns named Springfield in the U.S. More on the ambiguity problem in a bit, but for now, our solution was a function that merges detected locations if they are situated within a certain threshold apart in the original text. We chose a maximum gap length of 2 between the tagged locations for them to be classified as an expression.
@@ -112,7 +108,7 @@ If you would like to view the entire script or use it in your project, please vi
 
 ### Application
 
-Going back to our original problem of counting the number of ads that referenced each state for each of our Arkansas, Mississippi, and Texas corpora, we can use the above technique to help compute that.
+Now that we had a list of locations for each ad, we could tackle our original problem of calculating for each state the number of ads in each corpus that referenced that state.
 
 The algorithm:
 
@@ -121,25 +117,21 @@ The algorithm:
 The above algorithm makes a few assumptions about the model governing the types of locations that appear in the text. Notice how first, we try to directly match the location to a known list of state names (e.g. "Arkansas") and abbreviations (e.g. "AR" and "Ark."). If it fails, we next try to look up an address for the location. We implemented this using the geopy library with the GoogleV3 geocoder. The [github for the project](https://github.com/geopy/geopy) contains some examples of doing geolocating and address lookup similar to this. Because NER often produces false positives--for example in our data, subscriber names often appeared in all caps and were inaccurately tagged as locations--we check that the result is an address in the region. We chose to make the assumption that true locations always either:
 
 * Include a state name in the merged location entity, or
-* Are a reference to a local or nearby county or city
+* Are a reference to a local or nearby location
 
-This helps reduce the number of false positives (e.g. names of people) that are considered as state references, since Google Maps is very good at finding locations for partial matches, and this is very bad for us. The probability that the address it chooses to return for non-location terms is in the nearby area (for example, Arkansas, Mississippi, Texas, Georgia, Tennessee, Louisiana, and Missouri) is low but of course non-negligible.
+This helps reduce the number of false positives (e.g. names of people) that are considered as state references, since Google Maps is very good at finding addresses for any input query, whether or not it's an actual location. Also keep in mind that the probability that the address it chooses to return for non-location terms is in the nearby area (for example, Arkansas, Mississippi, Texas, Georgia, Tennessee, Louisiana, and Missouri) is low but of course non-negligible.
 
-Because of time constraints, we didn't implement that exact algorithm. We started by just directly using whatever result the geocoder returned as the state for each location, but found that the number of false matches was enormous due to ambiguity in the data and noise. We ended up just implementing the "direct hit" part of the algorithm, under the assumption that this would underestimate the true state reference numbers but not bias any particular states, or bordering states vs the local state within a corpus. This means the counts we used to produce the maps are only location names that contain the state name or abbreviation.
-
-Finally, with the state reference numbers in hand, we were able to produce some pretty Google Fusion tables displaying our results. See the next section for that.
+For comparison, we also implemented a different solution, using purely direct hits. This is functionally equivalent to just manually searching keywords (e.g. "Ark.", "AK", "Arkansas") for each state in each corpus and tallying the results. If you want to minimize the number of false positives due to noise in the data, this is the way to go. However, it is very restrictive and requires a predefined list of keywords for each state. It is inflexible: for example, if we wanted to include "Canada" in our results, we would need to update the keywords list. And if there were keywords associated with real locations we didn't think of (for example, misspellings of state names that the Google API could resolve but direct hits would miss), merely matching each location against that predefined list of keywords would miss them.
 
 ## Conclusions
 
-There are some limitations of NER that should be kept in mind. For one, it can sometimes tag items incorrectly. For example, we found that names of slaves or slave owners were sometimes tagged as locations, and places such as rivers could be tagged innacurately as the location "Colorado" as opposed to being interpreted as "Colorado River." These outliers can be cleaned up manually, but with a large corpus such as ours, it can be very time consuming. Even a well-written NER script will still make some mistakes, so cleaning up the data is a necessary step when using NER. That said, due to the nature of our project and the focus on the tool rather than the conclusions, we did not manually clean up our tagged locations but only the final state counts (false positives "Colorado" and "Washington") and designed the script to address these issues as intelligently as possible.
+There are some limitations of NER that should be kept in mind. For one, it can sometimes tag items incorrectly. For example, we found that names of slaves or slave owners were sometimes tagged as locations, and places such as rivers could be tagged inaccurately as the location "Colorado" as opposed to being interpreted as "Colorado River." These outliers can be cleaned up manually, but with a large corpus such as ours, it can be very time consuming. Even a well-written NER script will still make some mistakes, so cleaning up the data is a necessary step when using NER. That said, due to the nature of our project and the focus on the tool rather than the conclusions, we did not manually clean up our tagged locations. We also did not modify our final state counts in any way. Note how, for example, there are many hits for Washington. These are not true hits, but partial matches from "Washington County, Texas." We left them in to illustrate a limitation of this method of counting state references.
 
-A limitation of the extension of NER in computing state counts is ambiguous place names, as previously mentioned with the Springfield example. Not to mention, state counts are affected by noise in the tagged locations data. To address this, in addition to the algorithm's design, we could reduce the noise at the locations tagging level by being more strict about tagged location matches. Right now, we only ran the data with one classifier, but to reduce the number of false positives (at the risk of reducing true positives), we could run the data with multiple classifiers, and only take as true the tagged locations that were matched by every classifier. If that produces too little data, we could set a threshold such as 2/3 for the number of classifiers that have to match a given token.
-
+A limitation of computing state counts algorithm is ambiguous place names, as previously mentioned with the Springfield example. Not to mention, state counts are affected by noise in the tagged locations data. To address this, in addition to the algorithm's design, we could reduce the noise at the locations tagging level by being more strict about tagged location matches. Right now, we only ran the data with one classifier, but to reduce the number of false positives (at the risk of reducing true positives), we could run the data with multiple classifiers, and only take as true the tagged locations that were matched by every classifier. If that produces too little data, we could set a threshold such as 2/3 for the number of classifiers that have to match a given token.
 
 ### Using NER with Google Fusion Tables
 
 Google Fusion Tables, which merges together spreadsheets with geographic information, provides us a way to visualize the different results that NER can give. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables).
-
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1KAwiRgVmTH5isz0oej-6qCfAT6kN6WoOpJttAP0U&amp;viz=MAP&amp;h=false&amp;lat=32.60122154632098&amp;lng=-83.80948750000005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 <p class="caption">Number of direct hit mentions of states in full Texas ad corpus, 1835-1860</p>
@@ -152,15 +144,9 @@ Google Fusion Tables, which merges together spreadsheets with geographic informa
 
 ~~Using the NER script, we were able to analyze our hypotheses that Texas was more self-referential and the only state to mention Mexico by getting a count of how many times a state was mentioned in the Mississippi, Arkansas, and Texas newspapers. One way to visualize the results of this data is through Google Fusion Tables. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables). By shading each mentioned state with a color intensity based on its percentage of total references, we were quickly able to illustrate the results of the NER counts. 
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1eqWyjk4LrP4cnkB2-O9YD-FZKIfg8KE2f2a2s2ST&amp;viz=MAP&amp;h=false&amp;lat=32.30456213321756&amp;lng=-89.39054218750005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-
 <p class="caption">Number of mentions of states in Texas ad corpus, 1835-1860</p>
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1zqezAZk0FRZnfDEraQRD1dcl471zN8VzsI6Up-L5&amp;viz=MAP&amp;h=false&amp;lat=33.26511829579128&amp;lng=-91.80753437500006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-
 <p class="caption">Number of mentions of states in Mississippi ad corpus, 1835-1860</p>
-
-<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1WSnfP2-F62Do3GsH-_Cey1qIzP94Ox-0n-5Hzl93&amp;viz=MAP&amp;h=false&amp;lat=34.83073025937851&amp;lng=-91.89542500000006&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
 <p class="caption">Number of mentions of states in Arkansas ad corpus, 1835-1860</p>
 
