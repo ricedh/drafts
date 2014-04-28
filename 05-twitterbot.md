@@ -25,7 +25,20 @@ In order to connect with present-day readers on an immediate level, we decided t
 
 Our Twitter account publishes excerpts from runaway advertisements using Python scripts written with the help of a [tutorial by Jeff Thompson](http://www.jeffreythompson.org/blog/2013/12/02/tutorial-twitter-bots/).
 
-Our [first Python script](https://github.com/ricedh/adbot/blob/master/adbot.py), `adbot.py`, randomly selects an advertisement from among a
+Our [first Python script](https://github.com/ricedh/adbot/blob/master/adbot.py), `adbot.py`, randomly selects an advertisement from among about 400 ads published in the Houston *Telegraph and Texas Register* and the Austin *State Gazette* between 1835 and 1860. It then publishes a new tweet containing an excerpt from the beginning of the ad and a link to the original ad, like this:
+
+<blockquote class="twitter-tweet" align="center" lang="en"><p>&quot;$25 REWARD.--Ranaway from the subscriber on the 13th January inst. a negro man named Lem or Lemuel, his height...&quot; <a href="http://t.co/wKvHHckpGZ">http://t.co/wKvHHckpGZ</a></p>&mdash; Texas Runaway Ads (@TxRunawayAds) <a href="https://twitter.com/TxRunawayAds/statuses/456802496338755584">April 17, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Our [method of storing our data](./index.html#our-data) makes it easy for the script to recompose the permalink to the original ad because all of the unique information about the URL is contained in the filename of each Texas advertisement in our dataset.
+
+Our [second Python script](https://github.com/ricedh/adbot/blob/master/adbot-otd.py), `adbot-otd.py`, also takes advantage of the fact that each ad's filename contains the date on which it appeared. This script locates files in our dataset that appeared on the current day and then publishes the link to the ad with the original year it was published and some hashtags, like this:
+
+<blockquote class="twitter-tweet" align="center" lang="en"><p><a href="https://twitter.com/search?q=%23OnThisDay&amp;src=hash">#OnThisDay</a> in 1855, this ad appeared in <a href="https://twitter.com/search?q=%23Austin&amp;src=hash">#Austin</a> <a href="https://twitter.com/search?q=%23Texas&amp;src=hash">#Texas</a> <a href="http://t.co/ySEQmLrp3D">http://t.co/ySEQmLrp3D</a> <a href="https://twitter.com/search?q=%23OTD&amp;src=hash">#OTD</a> <a href="https://twitter.com/search?q=%23ATX&amp;src=hash">#ATX</a></p>&mdash; Texas Runaway Ads (@TxRunawayAds) <a href="https://twitter.com/TxRunawayAds/statuses/458326850708570112">April 21, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Each of these scripts are run automatically once a day using a Mac OS X program called `launchd`, which was configured with the help of a [tutorial by Nathan Griggs](http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/). Our `adbot.py` script typically runs every morning, after which the advertisement just tweeted is moved to a different directory to prevent repeated tweets. The `adbot-otd.py` script runs in the afternoon and posts to Twitter if there is an ad whose date matches the current date.
+
 
 ##Conclusions
 
