@@ -7,16 +7,17 @@ This page discusses the digital data collection tool Named Entity Recognition (N
 
 ## Rationale
 
-In past analyses of runaway slave advertisements, the primary method utilized has been close reading, as illustrated in John Hope Franklin and Loren Schweninger's *Runaway Slaves: Rebels on the Plantations*. These authors chose fugitive slave advertisements as relatively credible sources (since owners would have high incentives to provide accurate descriptions) and employed close reading to observe the nature of slavery on a personal level ([Franklin and Scheninger, 295](index.html#bibliography)).
+In past analyses of runaway slave advertisements, the primary method utilized to collect data has been close reading, as illustrated in John Hope Franklin and Loren Schweninger's *Runaway Slaves: Rebels on the Plantations*. The authors chose fugitive slave advertisements as relatively credible sources since owners would have high incentives to provide accurate descriptions. They employed close reading to observe the nature of slavery on a personal level ([Franklin and Scheninger, 295](index.html#bibliography)).
 
-Our own observations focused on geographic trends in the advertisements, however. A close reading of the runaway ads from our corpora suggested that Texas ads were more self-referential than those of Arkansas and Mississippi, which seemed to include a more diverse interaction with states outside of themselves. In addition, mentions of Mexico seemed to appear exclusively in Texas ads. However, without digital tools to sift through the information, and with over 2500 advertisements in the corpora, analysis and trends are challenging to prove through close reading. In order to test these hypotheses, then, we needed comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas). These location lists required a method of large data collection and organization, since the number of advertisements prohibited the possibility of manual labeling.
+Our goal was to understand differences in location references within runaway slave ads across the Texas, Arkansas, and Mississippi corpora. After a close reading of the ads, we hypothesized that Texas ads were more self-referential than those of Arkansas and Mississippi. In addition, we noticed that Texas ads exclusively mentioned Mexico. Without digital tools to sift through the information, and with over 2500 advertisements in the corpora, we wouldn't been able to feasibly collect the data to analyze these hypotheses. Thus, we needed an automatic way to compile comprehensive lists of state mentions in each of the three runaway ad corpora (Arkansas, Mississippi, and Texas).
 
-Extracting geographic place names from the runaway advertisements through Named Entity Recognition (NER) gave us the ability to process the large amounts of data. The script was able to collect a relatively comprehensive list of all location mentions in the corpora. The possibilities of NER extend beyond the geographic as well, through NER's ability to extract names of people and organizations. Without computer coding, we would have been unable to collect a relatively complete data set of locations, given the enormous size of our sources and the manual labor necessary for the task. Through NER, however, we were able to achieve an approximation, a broad overview of the number trends in state references for Arkansas, Mississippi, and Texas. These number trends allowed us to make other digital products like Google Fusion Tables (explained in the Conclusion) in order to illustrate these trends visually.
-
+Named Entity Recognition came to the rescue. Named Entity Recognition (NER) gave us the ability to extract the names of locations mentioned in each ad automatically. With the locations in hand, we needed a way to count, for each corpus, the number of ads that referenced a given state. Read on for a walkthrough of the entire process.
 
 ## Methodology
 
-To compute for each state in the United States (and Mexico) the number of ads in a corpus that referenced that state, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder. Since this article is about named entity recognition, this article will focus on the first part, in the context of locations identification.
+For each corpus, we wanted to compute for each state and for Mexico the number of ads that "name-dropped" that location. To do that, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder. Since this article is about named entity recognition, this article will focus on the first part, in the context of locations identification.
+
+Please note that we do not discriminate between state reference types. That means, locations used in the context of where a slave was projected to run to count, locations used in the context of where a slave used to live count, even locations used in the context of where the sheriff's dog live count. Any and all locations are valid locations for our analysis. Identifying just "ran from" and "ran to" locations is a much more complex task that we did not tackle.
 
 ### Named Entity Recognition
 
@@ -28,7 +29,7 @@ Stanford's implementation of NER uses a Conditional Random Field (CRF) in order 
 
 ### Generating a List of Referenced Locations in Each Ad
 
-Our goal was to find all location names. As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
+Our first task was to find all location names. As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
 
 Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command. For an explanation of the arguments to the NER program, please read this short [introduction to initializing NER for using Pyner](http://outofabrownpaperbag.wordpress.com/2013/07/04/stanford-ner-and-pyner-the-beginnings-for-beginners/). Note that we use the english.conll.4class classifier. It served our purposes, but if you want to train your own classifier, you can of course do that. The Wilkens Group at the University of Notre Dame has a good [tutorial on training your own classifier](https://blogs.nd.edu/wilkens-group/2013/10/15/training-the-stanford-ner-classifier-to-study-nineteenth-century-american-fiction/) if you are interested. They used NER on a 19th century American Fiction data set, and their tutorial outlines the advantages of training your own classifier.
 
@@ -48,8 +49,8 @@ for filename in os.listdir(directory):
         with open(os.path.join(directory, filename), 'r') as f:
             text = f.read().decode("utf8")
             entities = tagger.get_entities(text)
-			if 'LOCATION' in entities:
-			    locations[filename] = entities['LOCATION']
+            if 'LOCATION' in entities:
+                locations[filename] = entities['LOCATION']
 ```
 
 One problem that came up was that location tokens were as small as possible--usually at the word level. That means, if the text contained the phrase "Springfield, Virginia", the locations list would usually separate entries for "Springfield" and "Virginia." That behavior is not ideal since it can lead to ambiguity in the location names, and excess results. For example, there are dozens of towns named Springfield in the U.S. More on the ambiguity problem in a bit, but for now, our solution was a function that merges detected locations if they are situated within a certain threshold apart in the original text. We chose a maximum gap length of 2 between the tagged locations for them to be classified as an expression.
@@ -121,6 +122,8 @@ The above algorithm makes a few assumptions about the model governing the types 
 
 This helps reduce the number of false positives (e.g. names of people) that are considered as state references, since Google Maps is very good at finding addresses for any input query, whether or not it's an actual location. Also keep in mind that the probability that the address it chooses to return for non-location terms is in the nearby area (for example, Arkansas, Mississippi, Texas, Georgia, Tennessee, Louisiana, and Missouri) is low but of course non-negligible.
 
+Also note that since we are storing the state abbreviations in a set, each ad will include each state in its mentions set at most once. Sets do not allow duplicate items, so the results reflect the number of ads referencing each state, instead of the number of times each state is referenced.
+
 For comparison, we also implemented a different solution, using purely direct hits. This is functionally equivalent to just manually searching keywords (e.g. "Ark.", "AK", "Arkansas") for each state in each corpus and tallying the results. If you want to minimize the number of false positives due to noise in the data, this is the way to go. However, it is very restrictive and requires a predefined list of keywords for each state. It is inflexible: for example, if we wanted to include "Canada" in our results, we would need to update the keywords list. And if there were keywords associated with real locations we didn't think of (for example, misspellings of state names that the Google API could resolve but direct hits would miss), merely matching each location against that predefined list of keywords would miss them.
 
 ## Conclusions
@@ -149,9 +152,7 @@ Google Fusion Tables, which merges together spreadsheets with geographic informa
 <p class="caption">Number of algorithm hit mentions of states in full Mississippi ad corpus, 1835-1860</p>
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+11IXhXoyvTGtVf-e1lQOrQgTTs_BcCR_lgZFKtkKW&amp;viz=MAP&amp;h=false&amp;lat=37.42145111932027&amp;lng=-96.20206562500005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-<p class="caption">Number of algorithm hit mentions of states in full Arkansas ad corpus, 1835-1860</p>
-
-~~Using the NER script, we were able to analyze our hypotheses that Texas was more self-referential and the only state to mention Mexico by getting a count of how many times a state was mentioned in the Mississippi, Arkansas, and Texas newspapers. One way to visualize the results of this data is through Google Fusion Tables. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables). By shading each mentioned state with a color intensity based on its percentage of total references, we were quickly able to illustrate the results of the NER counts. 
+<p class="caption">Number of algorithm hit mentions of states in full Arkansas ad corpus, 1835-1860</p> 
 
 When viewed in conjunction, the three maps show that Texas runaway slave advertisements were indeed slightly more self-referential than advertisements in Arkansas and Mississippi, which confirms our hypothesis. This could be due to the fact that Texas was a border land, so many runaway slaves were likely heading towards more remote areas, such as western Texas and Mexico, and not towards the rest of the Southern states. Texas is additionally the only state of the three to mention Mexico, but it does so fewer times than we were expecting. Arkansas is the least self-referential, which supports our earlier hypothesis outlined in the [Palladio section](01-palladio.html) that Arkansas was somewhat of a border land as well. The fact that about half of the total state references in the corpus are locations outside of Arkansas could be because Arkansas had more capture notices that advertised runaway slaves from other states.  
 
