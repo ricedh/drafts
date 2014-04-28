@@ -3,7 +3,7 @@ title: Sharing Primary Sources on Twitter
 author: Alyssa Anderson, Aaron Braunstein, Daniel Burns, Clare Jensen, Caleb McDaniel, and Kaitlyn Sisk
 ...
 
-The [TxRunawayAds](http://twitter.com/TxRunawayAds) account tweets excerpts from advertisements related to runaway slaves in nineteenth-century Texas newspapers, along with links to the page images of the ad in the [Portal to Texas History](http://texashistory.unt.edu).
+To experiment with new ways to share history online, we created a [Twitter account](http://twitter.com/TxRunawayAds) that publishes excerpts from advertisements related to runaway slaves in nineteenth-century Texas newspapers, along with links to the page images of the ad in the [Portal to Texas History](http://texashistory.unt.edu).
 
 ## Rationale
 
