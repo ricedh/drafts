@@ -30,7 +30,7 @@ Our goal was to find all location names. We used the built-in classifier, englis
 
 As mentioned, we chose Stanford's Named Entity Recognition software to use to identify locations in our corpora of runaway slave ads. We chose to write our entity tagger script in Python, and fortunately there is an interface called [Pyner](https://github.com/dat/pyner) that hooks calls to the NER program.
 
-Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command:
+Once we downloaded NER and cd'd to the directory, we started it with the following UNIX command. For an explanation of the arguments to the NER program, please read this short [introduction to initializing NER for using Pyner](http://outofabrownpaperbag.wordpress.com/2013/07/04/stanford-ner-and-pyner-the-beginnings-for-beginners/).
 
 ```
 java -mx1000m -cp stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier classifiers/english.conll.4class.distsim.crf.ser.gz -port 8080 -outputFormat inlineXML
@@ -97,7 +97,7 @@ def gap_length(word1, word2, text):
     return gap, edited_text, inter_text
 ```
 
-Finally, we dumped the resulting filename -> locations dictionary as a JSON file:
+Finally, we dumped the resulting filename -> locations dictionary as a JSON file. [Click here](https://github.com/ricedh/drafts/blob/master/tagged_locations/all-arkansas-1820-1865.json) for an example of our locations file for the Arkansas corpus.
 ```python
 with open(directory + '.json', 'w') as f:
     f.write(json.dumps(
@@ -130,14 +130,13 @@ Because of time constraints, we didn't implement that exact algorithm. We starte
 Finally, with the state reference numbers in hand, we were able to produce some pretty Google Fusion tables displaying our results. See the next section for that.
 
 ## Conclusions
-*Findings, questions, limitations.*
 
 There are some limitations of NER that should be kept in mind. For one, it can sometimes tag items incorrectly. For example, we found that names of slaves or slave owners were sometimes tagged as locations, and places such as rivers could be tagged innacurately as the location "Colorado" as opposed to being interpreted as "Colorado River." These outliers can be cleaned up manually, but with a large corpus such as ours, it can be very time consuming. Even a well-written NER script will still make some mistakes, so cleaning up the data is a necessary step when using NER. That said, due to the nature of our project and the focus on the tool rather than the conclusions, we did not manually clean up our tagged locations but only the final state counts (false positives "Colorado" and "Washington") and designed the script to address these issues as intelligently as possible.
 
 A limitation of the extension of NER in computing state counts is ambiguous place names, as previously mentioned with the Springfield example. Not to mention, state counts are affected by noise in the tagged locations data. To address this, in addition to the algorithm's design, we could reduce the noise at the locations tagging level by being more strict about tagged location matches. Right now, we only ran the data with one classifier, but to reduce the number of false positives (at the risk of reducing true positives), we could run the data with multiple classifiers, and only take as true the tagged locations that were matched by every classifier. If that produces too little data, we could set a threshold such as 2/3 for the number of classifiers that have to match a given token.
 
 
-###Using NER with Google Fusion Tables
+### Using NER with Google Fusion Tables
 
 Google Fusion Tables, which merges together spreadsheets with geographic information, provides us a way to visualize the different results that NER can give. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables).
 
