@@ -15,7 +15,7 @@ Named Entity Recognition came to the rescue. Named Entity Recognition (NER) gave
 
 ## Methodology
 
-For each corpus, we wanted to compute for each state and for Mexico the number of ads that "name-dropped" that location. To do that, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder. Since this article is about named entity recognition, this article will focus on the first part, in the context of locations identification.
+For each corpus, we wanted to compute for each state and for Mexico the number of ads that "name-dropped" that location. To do that, we decided to utilize a combination of named entity recognition, via [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml), and address lookup, via the [geopy Python library](https://github.com/geopy/geopy) using the GoogleV3 geocoder.
 
 Please note that we do not discriminate between state reference types. That means, locations used in the context of where a slave was projected to run to count, locations used in the context of where a slave used to live count, even locations used in the context of where the sheriff's dog live count. Any and all locations are valid locations for our analysis. Identifying just "ran from" and "ran to" locations is a much more complex task that we did not tackle.
 
