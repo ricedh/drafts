@@ -26,3 +26,7 @@ In order to connect with present-day readers on an immediate level, we decided t
 Our Twitter account publishes excerpts from runaway advertisements using Python scripts written with the help of a [tutorial by Jeff Thompson](http://www.jeffreythompson.org/blog/2013/12/02/tutorial-twitter-bots/).
 
 Our [first Python script](https://github.com/ricedh/adbot/blob/master/adbot.py), `adbot.py`, randomly selects an advertisement from among a
+
+##Conclusions
+
+Our TxRunawayAds projects is one of many Twitter feeds that tweets primary source material such as quotes or pictures. As [Vanessa Varin](http://www.historians.org/publications-and-directories/perspectives-on-history/april-2014/tweeps-discover-the-past) notes, historical Twitter feeds are a popular and growing genre of social media, but also a problematic one. It is all-too-easy for a photoshopped or misattributed Tweet to take off, spreading historical misconceptions each time someone hits the retweet button. In light of this, historians advise historical tweeters to always include important information about date and source attribution in their tweets. Luckily for our project, the [Portal to Texas History](http://texashistory.unt.edu/) makes it very easy to create a permalink to scans of the primary source material. Social media can be a valuable resource for historians to engage with people in a non-academic setting, but it is important to keep in mind the necessity for accurate historical information even in the informal world of Twitter.
