@@ -93,7 +93,7 @@ def gap_length(word1, word2, text):
     return gap, edited_text, inter_text
 ```
 
-Finally, we dumped the resulting filename -> locations dictionary as a JSON file. [Click here](https://github.com/ricedh/drafts/blob/master/tagged_locations/all-arkansas-1820-1865.json) for an example of our locations file for the Arkansas corpus.
+Finally, we dumped the resulting filename -> locations dictionary as a [JSON file](http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/). [Click here](https://github.com/ricedh/drafts/blob/master/tagged_locations/all-arkansas-1820-1865.json) for an example of our locations file for the Arkansas corpus.
 ```python
 with open(directory + '.json', 'w') as f:
     f.write(json.dumps(
