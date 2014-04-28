@@ -48,15 +48,16 @@ From the sorted ads, there are a number of questions that can either be answered
 
 **Texas Gazette**
 
-![txgazetteads chart](https://cloud.githubusercontent.com/assets/6432995/2812708/040ac072-ce6a-11e3-9876-00e76ad67479.png)
+![texgazchart2](https://cloud.githubusercontent.com/assets/6432995/2813265/6f086a7e-ce82-11e3-970d-515535b357b2.png)
 
 **All Arkasas Ads**
 
-![arkansas ad chart](https://cloud.githubusercontent.com/assets/6432995/2812710/2618ce02-ce6a-11e3-97a1-82e6e7b95816.jpg)
+![arkansaschart2](https://cloud.githubusercontent.com/assets/6432995/2813272/8926f0ce-ce82-11e3-9a16-220ba8552a7b.png)
 
 **All Mississippi Ads**
 
-![miss ad chart](https://cloud.githubusercontent.com/assets/6432995/2812711/33733b5a-ce6a-11e3-9118-b1fce3d1e887.png)
+![mississippi chart 2](https://cloud.githubusercontent.com/assets/6432995/2813275/9a0bcb3a-ce82-11e3-9c93-69afaa6180cc.png)
+
 
 From here, the change in the quantity of ads over time can be examined.  Various historical events, in particular nationwide or state-specific laws, can be examined in conjuction with the changes of ads, to look for potential causation for these variations.
 
