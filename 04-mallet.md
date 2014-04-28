@@ -42,3 +42,17 @@ One concern with the use of topic modeling was the overall accuracy of the compu
 However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  [One ad]  (http://texashistory.unt.edu/ark:/67531/metapth81420/m1/3/zoom/?zoom=5&lat=6160&lon=744&layers=BT) discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the [Arkansas ads] (http://aquila.usm.edu/cgi/viewcontent.cgi?article=1000&context=drs), another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
 
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
+
+From the sorted ads, there are a number of questions that can either be answered, or explored more fully.  One issue we were running across during our close reading of the ads was the amount of variation between quantities of runaway ads and capture notices.  Certain states had specific times where there was a much higher ratio of capture notices to runaway ads.  Through use of another script designed to count the sorted ads by year, month, and decade, we established the following data, regarding the frequency of ad types over time.
+**Blue** represents all capture notices, and **red** represents all runaway ads.
+
+**Texas Gazette**
+![txgazetteads chart](https://cloud.githubusercontent.com/assets/6432995/2812708/040ac072-ce6a-11e3-9876-00e76ad67479.png)
+
+**All Arkasas Ads**
+![arkansas ad chart](https://cloud.githubusercontent.com/assets/6432995/2812710/2618ce02-ce6a-11e3-97a1-82e6e7b95816.jpg)
+
+**All Mississippi Ads**
+![miss ad chart](https://cloud.githubusercontent.com/assets/6432995/2812711/33733b5a-ce6a-11e3-9118-b1fce3d1e887.png)
+
+
