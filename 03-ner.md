@@ -139,16 +139,19 @@ Google Fusion Tables, which merges together spreadsheets with geographic informa
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1jFLp-jCT9WreUDGFkhuhEbppaPP7mWVny_V4dzxe&amp;viz=MAP&amp;h=false&amp;lat=36.931248249459976&amp;lng=-94.18058125000005&amp;t=1&amp;z=3&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 <p class="caption">Number of direct hit mentions of states in full Mississippi ad corpus, 1835-1860</p>
 
-<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+18V9fvHKhCRPWPDVNew9sLvDeICL7kEDAtl89SIjm&amp;viz=MAP&amp;h=false&amp;lat=39.48604049222124&amp;lng=-92.24698750000005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+18V9fvHKhCRPWPDVNew9sLvDeICL7kEDAtl89SIjm&amp;viz=MAP&amp;h=false&amp;lat=39.48604049222124&amp;lng=-92.24698750000005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 <p class="caption">Number of direct hit mentions of states in full Arkansas ad corpus, 1835-1860</p>
 
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1-hlDP6HFXPtNH6D1FdvWTYcYWFD5Jb7DwThsaKx8&amp;viz=MAP&amp;h=false&amp;lat=32.37881852201254&amp;lng=-96.99308125000005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+<p class="caption">Number of algorithm hit mentions of states in full Texas ad corpus, 1835-1860</p>
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+1hu-W7Lo1hl6B3Oj9x-qKWaC7JVHbGJFSxLYd7LAj&amp;viz=MAP&amp;h=false&amp;lat=37.94313021798137&amp;lng=-96.68546406250005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+<p class="caption">Number of algorithm hit mentions of states in full Mississippi ad corpus, 1835-1860</p>
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2%3E%3E1+from+11IXhXoyvTGtVf-e1lQOrQgTTs_BcCR_lgZFKtkKW&amp;viz=MAP&amp;h=false&amp;lat=37.42145111932027&amp;lng=-96.20206562500005&amp;t=1&amp;z=4&amp;l=col2%3E%3E1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+<p class="caption">Number of algorithm hit mentions of states in full Arkansas ad corpus, 1835-1860</p>
+
 ~~Using the NER script, we were able to analyze our hypotheses that Texas was more self-referential and the only state to mention Mexico by getting a count of how many times a state was mentioned in the Mississippi, Arkansas, and Texas newspapers. One way to visualize the results of this data is through Google Fusion Tables. ([This tutorial](http://commons.trincoll.edu/jackdougherty/how-to/gft-thematic-maps/) is helpful for learning how to use Google Fusion Tables). By shading each mentioned state with a color intensity based on its percentage of total references, we were quickly able to illustrate the results of the NER counts. 
-
-<p class="caption">Number of mentions of states in Texas ad corpus, 1835-1860</p>
-
-<p class="caption">Number of mentions of states in Mississippi ad corpus, 1835-1860</p>
-
-<p class="caption">Number of mentions of states in Arkansas ad corpus, 1835-1860</p>
 
 When viewed in conjunction, the three maps show that Texas runaway slave advertisements were indeed slightly more self-referential than advertisements in Arkansas and Mississippi, which confirms our hypothesis. This could be due to the fact that Texas was a border land, so many runaway slaves were likely heading towards more remote areas, such as western Texas and Mexico, and not towards the rest of the Southern states. Texas is additionally the only state of the three to mention Mexico, but it does so fewer times than we were expecting. Arkansas is the least self-referential, which supports our earlier hypothesis outlined in the [Palladio section](01-palladio.html) that Arkansas was somewhat of a border land as well. The fact that about half of the total state references in the corpus are locations outside of Arkansas could be because Arkansas had more capture notices that advertised runaway slaves from other states.  
 
