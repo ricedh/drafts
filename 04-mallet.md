@@ -39,7 +39,7 @@ Thus, we hypothesized that documents in which topic 7 was more prominent than to
 
 One concern with the use of topic modeling was the overall accuracy of the computer's ability to discriminate between similar ads.  Through analysis of the topic models for various states, it was found to have a high degree of reliability.  Out of the 398 Texas Gazette ads, the topic model sorting method split the ads into 195 capture notices and 203 runaway ads.  Manually searching the text of these sorted ads, we found there were 3 incorrectly identified ads in the capture notices and 1 in the runaway ads.  In this set, there was a 99% accuracy for differentiating between ads.  The Arkansas data set provided similar results.  Out of 199 capture notices, 9 were found in error; out of 289 runaway ads, only 6 were in error.  This gave the second data set an overall accuracy of 97%.  With these results, it is possible to trust the results from the topic models to within a reasonable margin of error.
 
-However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  [One ad]  (http://texashistory.unt.edu/ark:/67531/metapth81420/m1/3/zoom/?zoom=5&lat=6160&lon=744&layers=BT) discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the [Arkansas ads] (http://aquila.usm.edu/cgi/viewcontent.cgi?article=1000&context=drs), another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
+However, there are limitations to this approach.  The first issue is the fact that there are always exceptions in the content of the material.  [One ad](http://texashistory.unt.edu/ark:/67531/metapth81420/m1/3/zoom/?zoom=5&lat=6160&lon=744&layers=BT) discovered in the Texas Gazette text was the report of a runaway slave found dead.  This was identified by the topic model as strongly related to the runaway topic, even though the ad itself was a report of death.  In the [Arkansas ads](http://aquila.usm.edu/cgi/viewcontent.cgi?article=1000&context=drs), another ad was the report of a captured runaway who had escaped and run from the jailor.  While this ad fell into both categories, the system used would only sort the ad into one set, thus leaving it out of the other data set.
 
 Another limitation is the drop in accuracy as the number of topics allowed in the original program are increased.  For the Arkansas ads, when searched with 15 topics rather than the original 10, the accuracy dropped significantly.  In a set of 278 ads, 45 were incorrectly identified, dropping the accuracy to 84%.
 
@@ -47,12 +47,17 @@ From the sorted ads, there are a number of questions that can either be answered
 **Blue** represents all capture notices, and **red** represents all runaway ads.
 
 **Texas Gazette**
+
 ![txgazetteads chart](https://cloud.githubusercontent.com/assets/6432995/2812708/040ac072-ce6a-11e3-9876-00e76ad67479.png)
 
 **All Arkasas Ads**
+
 ![arkansas ad chart](https://cloud.githubusercontent.com/assets/6432995/2812710/2618ce02-ce6a-11e3-97a1-82e6e7b95816.jpg)
 
 **All Mississippi Ads**
+
 ![miss ad chart](https://cloud.githubusercontent.com/assets/6432995/2812711/33733b5a-ce6a-11e3-9118-b1fce3d1e887.png)
 
+From here, the change in the quantity of ads over time can be examined.  Various historical events, in particular nationwide or state specific laws, can be examined in conjuction with the changes of ads, to look for potential causation for these variations.
 
+There is significant potential for additional exploration of the ad text through these tools.  Even beyond these specific categories, further sorting of the ads through topic modelling is possible.  Within the capture notices, there are different categories between jailer's notices and citizen captures of slaves that could be differentiated.  The runaway ads also include ads for slaves that were supposedly stolen, which are written in different enough language that they could be removed into a new subset of ads.  In addition to increased sorting, the ads can also be examined with text mining.  The text analysis tool Voyant could be applied to the narrowed sets of ads to look for specific trends in the language, through the methods explained [here](http://ricedh.github.io/02-voyant.html).  Sorting the ads through MALLET is one step in many that can be taken to find and answer significant historical questions about the history of slavery.    
