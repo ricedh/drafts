@@ -39,10 +39,11 @@ Our [second Python script](https://github.com/ricedh/adbot/blob/master/adbot-otd
 
 Each of these scripts are run automatically once a day using a Mac OS X program called `launchd`, which was configured with the help of a [tutorial by Nathan Griggs](http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/). Our `adbot.py` script typically runs every morning, after which the advertisement just tweeted is moved to a different directory to prevent repeated tweets. The `adbot-otd.py` script runs in the afternoon and posts to Twitter if there is an ad whose date matches the current date.
 
+Currently, the Twitter feed draws on a dataset of approximately 500 ads found in three Texas newspapers: the *Telegraph and Texas Register* (Houston), the *State Gazette* (Austin), and the *Northern Standard* (Clarksville).
 
-##Conclusions
+## Conclusions
 
-Our TxRunawayAds projects is one of many Twitter feeds that tweets primary source material such as quotes or pictures. As [Vanessa Varin](http://www.historians.org/publications-and-directories/perspectives-on-history/april-2014/tweeps-discover-the-past) notes, historical Twitter feeds are a popular and growing genre of social media, but also a problematic one. It is all-too-easy for a photoshopped or misattributed Tweet to take off, spreading historical misconceptions each time someone hits the retweet button.
+Our TxRunawayAds project is one of many Twitter feeds that tweets primary source material such as quotes or pictures. As [Vanessa Varin](http://www.historians.org/publications-and-directories/perspectives-on-history/april-2014/tweeps-discover-the-past) notes, historical Twitter feeds are a popular and growing genre of social media, but also a problematic one. It is all-too-easy for a photoshopped or misattributed Tweet to take off, spreading historical misconceptions each time someone hits the retweet button.
 
 In light of this, historians advise historical tweeters to always include important information about date and source attribution in their tweets. Luckily for our project, the [Portal to Texas History](http://texashistory.unt.edu/) makes it very easy to create a permalink to digitized scans of the primary source material. Social media can be a valuable resource for historians to engage with people in a non-academic setting, but it is important to keep in mind the necessity for accurate historical information even in the informal world of Twitter.
 
