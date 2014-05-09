@@ -1,6 +1,6 @@
 ---
 title: Grouping Documents with Topic Models
-author: Daniel Burns
+author: Daniel Burns and Caleb McDaniel
 ...
 
 In this section, we examine how the software [MALLET](http://mallet.cs.umass.edu) can be used to analyze and identify subtopics within our set of runaway ads. Through the use of this tool, we found that ads could be reliably sorted into specific categories, such as runaway ads and captured runaway notices, where they could be analyzed separately. 
@@ -46,18 +46,11 @@ Another limitation is the drop in accuracy as the number of topics allowed in th
 From the sorted ads, there are a number of questions that can either be answered, or explored more fully.  One issue we were running across during our close reading of the ads was the amount of variation between quantities of runaway ads and capture notices.  Certain states had specific times where there was a much higher ratio of capture notices to runaway ads.  Through use of another script designed to count the sorted ads by year, month, and decade, we established the following data, regarding the frequency of ad types over time.
 **Blue** represents all capture notices, and **red** represents all runaway ads.
 
-**Texas Gazette**
+![Ads about Runaways in the Austin *Gazette*](https://cloud.githubusercontent.com/assets/6432995/2813265/6f086a7e-ce82-11e3-970d-515535b357b2.png)
 
-![texgazchart2](https://cloud.githubusercontent.com/assets/6432995/2813265/6f086a7e-ce82-11e3-970d-515535b357b2.png)
+![Ads about Runaways in Arkansas Newspapers](https://cloud.githubusercontent.com/assets/6432995/2813272/8926f0ce-ce82-11e3-9a16-220ba8552a7b.png)
 
-**All Arkasas Ads**
-
-![arkansaschart2](https://cloud.githubusercontent.com/assets/6432995/2813272/8926f0ce-ce82-11e3-9a16-220ba8552a7b.png)
-
-**All Mississippi Ads**
-
-![mississippi chart 2](https://cloud.githubusercontent.com/assets/6432995/2813275/9a0bcb3a-ce82-11e3-9c93-69afaa6180cc.png)
-
+![Ads about Runaways in Mississippi Newspapers](https://cloud.githubusercontent.com/assets/6432995/2813275/9a0bcb3a-ce82-11e3-9c93-69afaa6180cc.png)
 
 From here, the change in the quantity of ads over time can be examined.  Various historical events, in particular nationwide or state-specific laws, can be examined in conjuction with the changes of ads, to look for potential causation for these variations.
 
