@@ -33,6 +33,11 @@ As students and scholars in the Spring 2014 course [Digital History Methods](htt
 
 </div>
 
+
+</div>
+
+<div class="article">
+
 ## Our Data
 
 We have applied these methods to a specific kind of historical source: runaway slave advertisements from the antebellum U.S. South. Our ads are drawn from two sources. First, in collaboration with students in Dr. Andrew Torget's digital history class at the University of North Texas, who have published some of their own findings and methods on a [research blog](http://torget.us/HIST5100/research-blog/), we identified and transcribed all runaway ads published between 1835 and 1860 in two Texas newspapers that have been digitized on the [Portal to Texas History](http://texashistory.unt.edu)—the *Telegraph and Texas Register*, published in Houston for most of its run, and the *State Gazette*, published in Austin. We also analyzed advertisements from Arkansas and Mississippi that were transcribed as part of the [Documenting Runaway Slaves](http://aquila.usm.edu/drs/) project at the University of Southern Mississippi.
@@ -67,10 +72,6 @@ As art historian Marcus Wood has observed, the Southerners who created these run
 
 One limitation of our digital methods may be their inability to capture in full detail those day-to-day abuses and struggles. Our method of [sharing ads on Twitter](05-tweetbot.html) may provide the best window into that catalogue of struggles between individual owners and the people they claimed as slaves, while our other methods provide a more abstacted look at runaway slave advertisements as a whole. For the most part, our project focuses on the presentation of digital tools; for a clearer understanding of the personal struggles of slaves, see a close reading such as the one by [John Hope Franklin and Loren Schweninger](#bibliography).
 
-</div>
-
-<div class="article">
-
 ## Bibliography
 
 Ashton, Susanna, and Jonathan D. Hepworth. "[Jackson Unchained: Reclaiming a Fugitive Landscape][appendix]," *The Appendix*, November 5, 2013.
@@ -94,3 +95,6 @@ Wood, Marcus. "Rhetoric and the Runaway: The Iconography of Slave Escape in Engl
 [appendix]: http://theappendix.net/issues/2013/10/reclaiming-a-fugitive-landscape
 [projectmuse]: http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/civil_war_history/v054/54.4.kelley.html
 
+## Acknowledgements
+
+This site was built by [Dr. Caleb McDaniel](http://wcm1.web.rice.edu) and six undergraduate students at Rice University: Alyssa Anderson, Franco Bettati, Aaron Braunstein, Daniel Burns, Clare Jensen, and Kaitlyn Sisk. Maria Montalvo also assisted with page checking and the collection of advertisements. We would like to thank Dr. Andrew Torget and his students at the University of North Texas for sharing data with us, as well as Dr. Max Grivno, Dr. Douglass Chambers, and the team behind [Documenting Runaway Slaves](http://aquila.usm.edu/drs/) at the University of Southern Mississippi. Please send questions to <caleb.mcdaniel@rice.edu>, or comment and open issues on our [GitHub repository](https://github.com/ricedh/drafts).
